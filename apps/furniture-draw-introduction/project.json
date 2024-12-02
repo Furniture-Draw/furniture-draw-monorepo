@@ -1,0 +1,9 @@
+{
+  "name": "furniture-draw-introduction",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/furniture-draw-introduction",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project furniture-draw-introduction --web",
+  "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "furniture-draw-introduction-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/furniture-draw-introduction-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["furniture-draw-introduction"],
+  "// targets": "to see all targets run: nx show project furniture-draw-introduction-e2e --web",
+  "targets": {}
+}
