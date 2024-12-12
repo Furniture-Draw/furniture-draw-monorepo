@@ -1,4 +1,5 @@
 import { Navigation } from '@furniture-draw/navigation';
+import { Hero } from '@furniture-draw/hero';
 
 export default function Index() {
   /*
@@ -11,6 +12,11 @@ export default function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
+            <Hero
+              title="Test"
+              description="Deneme"
+              image="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg"
+            />
             <Navigation />
             <h1>
               <span> Hello there, </span>
