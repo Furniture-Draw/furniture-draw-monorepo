@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@furniture-draw/hero": ["libs/hero/src/index.ts"],
+      "@furniture-draw/login-register-page": [
+        "libs/login-register-page/src/index.ts"
+      ],
       "@furniture-draw/navigation": ["libs/navigation/src/index.ts"]
     }
   },

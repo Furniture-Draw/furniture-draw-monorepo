@@ -1,0 +1,9 @@
+{
+  "name": "hero",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/hero/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project hero --web",
+  "targets": {}
+}
