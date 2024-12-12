@@ -1,4 +1,4 @@
-// File: /Users/yusufsargin/Desktop/projects/furniture-draw/apps/furniture-draw-introduction/src/app/layout.tsx
+// File: C:\Users\Monster\furniture-draw-monorepo\apps\furniture-draw-introduction\src\app\layout.tsx
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

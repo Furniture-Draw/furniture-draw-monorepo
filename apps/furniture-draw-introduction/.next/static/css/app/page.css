@@ -1,11 +1,72 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../libs/navigation/src/lib/navigation.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************/
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.navigation_navbar__efmh4 {
+    width: 100;
+    background-color: #ffffff;
+    
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navigation_container__9Gn9x {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  
+  .navigation_logo__96RmQ a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1c0202;
+    text-decoration: none;
+  }
+  
+  .navigation_navMenu__xQV1Z {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation_navItem__VtD8L {
+    margin: 0 1rem;
+  }
+  
+  .navigation_navLink__d2tzj {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation_navLink__d2tzj:hover {
+    color: #000000;
+  }
+  
+  .navigation_authButtons___oBgv {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navigation_loginButton__GNwyt {
+    background-color: #ffbf23;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navigation_loginButton__GNwyt:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  
 

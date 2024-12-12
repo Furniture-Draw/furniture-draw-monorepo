@@ -1,7 +1,68 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.navbar {
+    width: 100;
+    background-color: #ffffff;
+    
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1c0202;
+    text-decoration: none;
+  }
+  
+  .navMenu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #000000;
+  }
+  
+  .authButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .loginButton {
+    background-color: #ffbf23;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .loginButton:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  
