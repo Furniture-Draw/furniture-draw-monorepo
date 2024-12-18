@@ -1,13 +1,12 @@
+'use client';
+
 import { Navigation } from '@furniture-draw/navigation';
-import { Hero } from '@furniture-draw/hero';
+import Hero1 from '../components/sections/hero1';
+import Hero3 from '../components/sections/hero3';
 
 export default function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.tailwind file.
-   */
   return (
+<<<<<<< HEAD
     <div>
       <div className="wrapper">
         <div className="container">
@@ -467,6 +466,12 @@ export default function Index() {
           </p>
         </div>
       </div>
+=======
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <Hero1 />
+      <Hero3 />
+>>>>>>> main
     </div>
   );
 }
