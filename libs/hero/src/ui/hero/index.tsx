@@ -1,13 +1,24 @@
 'use client';
 
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
-import type { HeroProps } from './types';
+import type { HeroProps, ActionButton } from '../types';
 
 export function Hero({
-  title,
-  description,
-  actionButtons = [],
-  image,
+  title = "Modern Furniture Design",
+  description = "Create and customize your perfect living space with our innovative furniture design platform.",
+  image = "https://hemmingandwills.co.uk/cdn/shop/articles/featured_image_-_living_room_furniture_layout_1600x@2x.jpg?v=1692692232",
+  actionButtons = [
+    {
+      label: "Get Started",
+      onClick: () => console.log("Get Started clicked"),
+      variant: "contained"
+    },
+    {
+      label: "Learn More",
+      onClick: () => console.log("Learn More clicked"),
+      variant: "outline"
+    }
+  ],
   imageAlt = 'Hero section image',
   containerWidth = 'lg'
 }: HeroProps) {
@@ -48,7 +59,7 @@ export function Hero({
                   direction={{ xs: 'column', sm: 'row' }}
                   spacing={2}
                 >
-                  {actionButtons.map((button, index) => (
+                  {actionButtons.map((button: ActionButton, index: number) => (
                     <Button
                       key={index}
                       variant={button.variant === 'outline' ? 'outlined' : 'contained'}
@@ -86,3 +97,5 @@ export function Hero({
     </Box>
   );
 }
+
+export default Hero;
