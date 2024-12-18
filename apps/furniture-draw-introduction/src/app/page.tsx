@@ -12,11 +12,7 @@ export default function Index() {
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
-            <Hero
-              title="Test"
-              description="Deneme"
-              image="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg"
-            />
+            <Hero title={''} description={''} image={undefined} />
             <Navigation />
             <h1>
               <span> Hello there, </span>
