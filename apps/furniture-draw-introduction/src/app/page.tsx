@@ -2,6 +2,7 @@
 
 import { Navigation } from '@furniture-draw/navigation';
 import { Hero } from '@furniture-draw/hero';
+import {Sponsors} from '@furniture-draw/sponsors';
 
 export default function Index() {
   const handleGetStarted = () => {
@@ -34,6 +35,7 @@ export default function Index() {
           ]}
         />
       </main>
+      <Sponsors/>
     </div>
   );
 }

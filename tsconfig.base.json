@@ -19,7 +19,8 @@
       "@furniture-draw/login-register-page": [
         "libs/login-register-page/src/index.ts"
       ],
-      "@furniture-draw/navigation": ["libs/navigation/src/index.ts"]
+      "@furniture-draw/navigation": ["libs/navigation/src/index.ts"],
+      "@furniture-draw/sponsors": ["libs/sponsors/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
