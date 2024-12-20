@@ -37,3 +37,20 @@ export interface HeroProps {
    */
   containerWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 }
+
+// Yeni Hero3 interfaces
+export interface FeatureCard {
+  icon?: React.ReactNode;
+  title: string;
+  description: string;
+  imageSrc?: string;
+}
+
+export interface Hero3Props {
+  mainTitle: string;
+  mainDescription: string;
+  features: FeatureCard[];
+  actionButtons?: ActionButton[];
+  backgroundVariant?: 'light' | 'dark';
+  alignment?: 'left' | 'center';
+}

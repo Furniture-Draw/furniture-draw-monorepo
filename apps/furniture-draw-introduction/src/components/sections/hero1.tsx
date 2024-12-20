@@ -1,18 +1,23 @@
 'use client';
 
-import { Navigation } from '@furniture-draw/navigation';
 import { Hero } from '@furniture-draw/hero';
-import {Sponsors} from '@furniture-draw/sponsors';
 
 export default function Index() {
+  const handleGetStarted = () => {
+    console.log("Get Started clicked");
+  };
+
+  const handleLearnMore = () => {
+    console.log("Learn More clicked");
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
       <main>
         <Hero
           title="Modern Furniture Design"
           description="Create and customize your perfect living space with our innovative furniture design platform."
-          image="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg"
+          image="https://t4.ftcdn.net/jpg/09/66/48/35/360_F_966483587_MriURsq1UFrnqmAc1Wd27GJLTWA5G74A.jpg"
           actionButtons={[
             {
               label: "Get Started",
@@ -26,8 +31,8 @@ export default function Index() {
             }
           ]}
         />
+        
       </main>
-      <Sponsors/>
     </div>
   );
 }
