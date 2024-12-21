@@ -16,12 +16,12 @@ export default function Index() {
           actionButtons={[
             {
               label: "Get Started",
-              onClick: handleGetStarted,
+              onClick: () => console.log("Get Started clicked"),
               variant: "contained"
             },
             {
               label: "Learn More",
-              onClick: handleLearnMore,
+              onClick: () => console.log("Learn More clicked"),
               variant: "outline"
             }
           ]}
