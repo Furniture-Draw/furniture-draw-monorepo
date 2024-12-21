@@ -1,0 +1,9 @@
+{
+  "name": "pricingCards",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/pricingCards/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project pricingCards --web",
+  "targets": {}
+}

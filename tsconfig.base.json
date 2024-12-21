@@ -20,6 +20,7 @@
         "libs/login-register-page/src/index.ts"
       ],
       "@furniture-draw/navigation": ["libs/navigation/src/index.ts"],
+      "@furniture-draw/pricingCards": ["libs/pricingCards/src/index.ts"],
       "@furniture-draw/sponsors": ["libs/sponsors/src/index.ts"]
     }
   },
