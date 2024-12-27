@@ -4,6 +4,7 @@ import { Navigation } from '@furniture-draw/navigation';
 import { Hero } from '@furniture-draw/hero';
 import {Sponsors} from '@furniture-draw/sponsors';
 import WhatDoWeOffer from '../components/sections/hero3';
+import {TestimonialSection} from '../components/sections/testimonials';
 
 export default function Index() {
   return (
@@ -31,6 +32,7 @@ export default function Index() {
       
       <Sponsors/>
       <WhatDoWeOffer/>
+      <TestimonialSection />
     </div>
   );
 }
