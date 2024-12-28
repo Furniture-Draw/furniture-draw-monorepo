@@ -21,6 +21,7 @@
       ],
       "@furniture-draw/navigation": ["libs/navigation/src/index.ts"],
       "@furniture-draw/pricingCards": ["libs/pricingCards/src/index.ts"],
+      "@furniture-draw/register": ["libs/register/src/index.ts"],
       "@furniture-draw/sponsors": ["libs/sponsors/src/index.ts"]
     }
   },
