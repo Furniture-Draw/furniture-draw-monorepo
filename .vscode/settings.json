@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "github.copilot.editor.enableAutoCompletions": false
+=======
+    "github.copilot.editor.enableAutoCompletions": true
+>>>>>>> 01e10f5151db6dbb6b14a5bae55b80d35177abd8
 }

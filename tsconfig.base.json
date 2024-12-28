@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@furniture-draw/about-page": ["libs/about-page/src/index.ts"],
+      "@furniture-draw/about-page/server": ["libs/about-page/src/server.ts"],
       "@furniture-draw/hero": ["libs/hero/src/index.ts"],
       "@furniture-draw/login-register-page": [
         "libs/login-register-page/src/index.ts"
