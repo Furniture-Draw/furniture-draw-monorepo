@@ -11,7 +11,7 @@ export const AboutPage = () => {
       <div style={{ textAlign: 'center', padding: '20px' }}>
         {/* Üstte resim */}
         <img
-          src="libs\about-page\src\assets\image1.jpg"
+          src="../images/image1.jpg"
           alt="Sample"
           style={{ width: '100%', maxWidth: '300px', borderRadius: '10px' }}
         />
