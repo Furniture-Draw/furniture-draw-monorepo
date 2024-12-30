@@ -43,7 +43,7 @@ export const PricingCardsPage = () => {
       alignItems: 'center',
     }}
   >
-    <Box sx={{ p: 3 }}>
+    <Box sx={{ p: 4 }}>
       {/* Genel Başlık */}
       <Typography variant="h4" gutterBottom align="center">
         Choose Your Plan
