@@ -16,7 +16,6 @@ export default function Index() {
       <VideoHero />
       <Sponsors />
       <WhatDoWeOffer />
-      <Sponsors />
       <PricingCards />
       <TestimonialSection />
     </div>
