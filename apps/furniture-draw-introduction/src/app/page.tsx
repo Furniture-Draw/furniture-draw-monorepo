@@ -1,34 +1,23 @@
 'use client';
 
-import { Hero } from '@furniture-draw/hero';
+import { Navigation } from '@furniture-draw/navigation';
 import { Sponsors } from '@furniture-draw/sponsors';
-import WhatDoWeOffer from '../components/sections/hero3';
+import HeadHero from '../components/sections/heroes/hero1';
+import WhatDoWeOffer from '../components/sections/heroes/hero3';
+import { TestimonialSection } from '../components/sections/testimonials';
+import VideoHero from '../components/sections/heroes/videohero';
+import PricingCards from './pricingCards/page';
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <main>
-        <Hero
-          title="Modern Furniture Design"
-          description="Create and customize your perfect living space with our innovative furniture design platform."
-          image="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg"
-          actionButtons={[
-            {
-              label: 'Get Started',
-              onClick: () => console.log('Get Started clicked'),
-              variant: 'contained',
-            },
-            {
-              label: 'Learn More',
-              onClick: () => console.log('Learn More clicked'),
-              variant: 'outline',
-            },
-          ]}
-        />
-      </main>
-
+    <div className="index">
+      <Navigation />
+      <HeadHero />
+      <VideoHero />
       <Sponsors />
       <WhatDoWeOffer />
+      <PricingCards />
+      <TestimonialSection />
     </div>
   );
 }
