@@ -5,45 +5,12 @@ export interface ActionButton {
 }
 
 export interface HeroProps {
-  /**
-   * Main title of the hero section
-   */
   title: string;
-
-  /**
-   * Descriptive text below the title
-   */
   description: string;
-
-  /**
-   * Optional array of action buttons
-   */
   actionButtons?: ActionButton[];
-
-  /**
-   * Optional image URL for the hero section
-   */
   image?: string;
-
-  /**
-   * Alt text for the image
-   * @default 'Hero section image'
-   */
   imageAlt?: string;
-
-  /**
-   * Optional container width
-   * @default 'lg'
-   */
   containerWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-}
-
-// Yeni Hero3 interfaces
-export interface FeatureCard {
-  icon?: React.ReactNode;
-  title: string;
-  description: string;
-  imageSrc?: string;
 }
 
 export interface Hero3Props {
@@ -53,4 +20,27 @@ export interface Hero3Props {
   actionButtons?: ActionButton[];
   backgroundVariant?: 'light' | 'dark';
   alignment?: 'left' | 'center';
+}
+
+export interface FeatureCard {
+  icon?: React.ReactNode;
+  title: string;
+  description: string;
+  imageSrc?: string;
+}
+
+// libs/hero/src/ui/videohero/types.ts
+export interface VideoHeroProps {
+  title: string;
+  description: string;
+  ctaButton?: {
+    label: string;
+    onClick: () => void;
+  };
+  videoSrc: string;
+  imageAlt?: string;
+  muted?: boolean;
+  autoPlay?: boolean;
+  loop?: boolean;
+  fallbackImageSrc?: string;
 }

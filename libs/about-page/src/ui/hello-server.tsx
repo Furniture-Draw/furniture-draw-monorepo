@@ -18,11 +18,10 @@ export const AboutPage = () => {
 
         {/* Altta metin */}
         <p style={{ marginTop: '10px', fontSize: '18px', color: '#333' }}>
-        We have worked in all production, manufacturing and sales departments in
-        the furniture industry for years. Our story started with a design and
-        production program that reflects the experiences we have gained.
+          We have worked in all production, manufacturing and sales departments
+          in the furniture industry for years. Our story started with a design
+          and production program that reflects the experiences we have gained.
         </p>
-        
       </div>
     </div>
   );
