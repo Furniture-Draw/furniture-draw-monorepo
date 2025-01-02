@@ -1,5 +1,6 @@
 'use client';
 import { LoginPage } from '@furniture-draw/login-register-page';
+import { Navigation } from '@mui/icons-material';
 
 export default function Login() {
   return (
