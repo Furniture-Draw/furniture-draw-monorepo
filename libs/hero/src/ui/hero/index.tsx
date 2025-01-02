@@ -23,7 +23,7 @@ export function Hero({
   containerWidth = 'lg'
 }: HeroProps) {
   return (
-    <Box sx={{ bgcolor: 'background.paper', py: { xs: 8, md: 12 } }}>
+    <Box sx={{ bgcolor: 'background.paper', py: { xs: 4, md: 0 } }}>
       <Container maxWidth={containerWidth}>
         <Box
           sx={{
