@@ -5,15 +5,15 @@ export const AboutPage = () => {
   return (
     <div>
       <Navigation />
-      <div style={{ color: 'red' }}>Mobilplan's story</div>
+      <div style={{ textAlign: 'center',color: 'red' }}>Mobilplan's story</div>
       
 
-      <div style={{ textAlign: 'center', padding: '20px' }}>
+      <div style={{ alignItems:'center', padding: '20px' }}>
         {/* Üstte resim */}
         <img
           src="../images/image1.jpg"
           alt="Sample"
-          style={{ width: '100%', maxWidth: '300px', borderRadius: '10px' }}
+          style={{ width: '100%', maxWidth: '700px', borderRadius: '60px' }}
         />
 
         {/* Altta metin */}
