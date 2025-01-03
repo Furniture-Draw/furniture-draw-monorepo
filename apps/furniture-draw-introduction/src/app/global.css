@@ -11,10 +11,18 @@ html {
   tab-size: 4;
   scroll-behavior: smooth;
 }
+html, body{
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2,
