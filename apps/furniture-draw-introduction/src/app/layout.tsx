@@ -19,8 +19,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main>{children}</main>
         <FooterWrapper />
       </body>
-    <html lang="en"> 
-      <body>{children}</body>
     </html>
   );
 }
