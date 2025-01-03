@@ -3,8 +3,9 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { ReactNode } from "react";
-import FooterWrapper from "../components/sections/layouts/footerWrapper";
+
+import { ReactNode } from 'react';
+import FooterWrapper from '../components/sections/layouts/footerWrapper';
 
 export const metadata = {
   title: 'Welcome to furniture-draw-introduction',
@@ -18,6 +19,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main>{children}</main>
         <FooterWrapper />
       </body>
+    <html lang="en"> 
+      <body>{children}</body>
     </html>
   );
 }
