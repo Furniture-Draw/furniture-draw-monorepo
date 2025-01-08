@@ -35,6 +35,16 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
+            <Link href="/about" className={styles.navLink}>
+              About
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/" className={styles.navLink}>
+            Features
+            </Link>
+          </li>
+          <li className={styles.navItem}>
             <Link href="/" className={styles.navLink}>
               Features
             </Link>
@@ -50,8 +60,8 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/about" className={styles.navLink}>
-              About
+            <Link href="/" className={styles.navLink}>
+              Contact
             </Link>
           </li>
           <li className={styles.navItem}>
