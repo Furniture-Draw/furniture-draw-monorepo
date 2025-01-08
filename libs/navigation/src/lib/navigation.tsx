@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import styles from './navigation.module.css';
 import Link from 'next/link';
 
 export function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
@@ -14,10 +21,22 @@ export function Navigation() {
             />{' '}
           </Link>
         </div>
-        <ul className={styles.navMenu}>
+        <div className={styles.navbarToggle} onClick={toggleMenu}>
+          <div className={styles.toggleBar}></div>
+          <div className={styles.toggleBar}></div>
+          <div className={styles.toggleBar}></div>
+        </div>
+        <ul
+          className={`${styles.navMenu} ${isMenuOpen ? styles.active : ''}`}
+        >
           <li className={styles.navItem}>
             <Link href="http://localhost:3000" className={styles.navLink}>
               Home
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/" className={styles.navLink}>
+              Features
             </Link>
           </li>
           <li className={styles.navItem}>
@@ -33,6 +52,11 @@ export function Navigation() {
           <li className={styles.navItem}>
             <Link href="/about" className={styles.navLink}>
               About
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/about" className={styles.navLink}>
+              Contact
             </Link>
           </li>
         </ul>
