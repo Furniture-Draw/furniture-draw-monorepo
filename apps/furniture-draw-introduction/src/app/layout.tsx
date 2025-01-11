@@ -6,6 +6,7 @@ import '@fontsource/roboto/700.css';
 
 import { ReactNode } from 'react';
 import FooterWrapper from '../components/sections/layouts/footerWrapper';
+import { SocialMediaConnect } from '../components/social-media-connect';
 
 export const metadata = {
   title: 'Welcome to furniture-draw-introduction',
@@ -16,7 +17,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
+        <main>
+          <SocialMediaConnect />
+          {children}
+        </main>
         <FooterWrapper />
       </body>
     </html>
