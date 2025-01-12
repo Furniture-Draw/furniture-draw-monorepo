@@ -1,0 +1,6 @@
+.container-social-connect {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  z-index: 1;
+}
