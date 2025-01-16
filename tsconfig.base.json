@@ -17,6 +17,7 @@
     "paths": {
       "@furniture-draw/about-page": ["libs/about-page/src/index.ts"],
       "@furniture-draw/about-page/server": ["libs/about-page/src/server.ts"],
+      "@furniture-draw/blog": ["libs/blog/src/index.ts"],
       "@furniture-draw/footer": ["libs/footer/src/index.ts"],
       "@furniture-draw/hero": ["libs/hero/src/index.ts"],
       "@furniture-draw/login-register-page": [

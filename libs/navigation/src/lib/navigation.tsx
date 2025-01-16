@@ -41,11 +41,6 @@ export function Navigation() {
           </li>
           <li className={styles.navItem}>
             <Link href="/" className={styles.navLink}>
-            Features
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>
               Features
             </Link>
           </li>
@@ -55,7 +50,7 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>
+            <Link href="http://localhost:3000/blog" className={styles.navLink}>
               Blog
             </Link>
           </li>
@@ -64,11 +59,7 @@ export function Navigation() {
               Contact
             </Link>
           </li>
-          <li className={styles.navItem}>
-            <Link href="/about" className={styles.navLink}>
-              Contact
-            </Link>
-          </li>
+         
         </ul>
         <div className={styles.authButtons}>
           <Link

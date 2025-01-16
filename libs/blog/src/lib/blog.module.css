@@ -1,0 +1,46 @@
+/* Blog-specific CSS */
+.blog-container {
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  background-color: #f9fafb;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-text {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Sosyal ikonlar arası boşluk */
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #d1d5db;
+}
+
+.social-icon {
+  color: #4b5563; /* İkon rengi */
+}
