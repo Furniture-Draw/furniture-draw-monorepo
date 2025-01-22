@@ -1,5 +1,7 @@
-export type  CardContentTemplateProps = {
-    title: string;
-    description: string;
-    example: string | number;
-  }
+export type CardContentTemplateProps = {
+  title: string;
+  price: string | number;
+  period?: string;
+  features: string[];
+  isPopular?: boolean;
+};
