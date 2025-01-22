@@ -26,9 +26,7 @@ export function Navigation() {
           <div className={styles.toggleBar}></div>
           <div className={styles.toggleBar}></div>
         </div>
-        <ul
-          className={`${styles.navMenu} ${isMenuOpen ? styles.active : ''}`}
-        >
+        <ul className={`${styles.navMenu} ${isMenuOpen ? styles.active : ''}`}>
           <li className={styles.navItem}>
             <Link href="http://localhost:3000" className={styles.navLink}>
               Home
@@ -55,11 +53,10 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>
+            <Link href="/contact" className={styles.navLink}>
               Contact
             </Link>
           </li>
-         
         </ul>
         <div className={styles.authButtons}>
           <Link
