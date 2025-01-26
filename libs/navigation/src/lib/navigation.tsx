@@ -38,7 +38,7 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>
+            <Link href="/features" className={styles.navLink}>
               Features
             </Link>
           </li>

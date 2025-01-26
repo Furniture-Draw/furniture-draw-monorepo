@@ -2,6 +2,7 @@
   "name": "@furniture-draw/contact",
   "version": "0.0.1",
   "dependencies": {
+    "@furniture-draw/contact": "file:",
     "tslib": "^2.3.0"
   },
   "type": "module",
