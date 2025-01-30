@@ -1,4 +1,4 @@
-import { Testimonial } from '../../../../../../libs/testimonial';
+import { Testimonial } from './index';
 
 // Mock data - gerçek projede bu veri API'den gelebilir
 const testimonialData = [
@@ -79,3 +79,5 @@ export function TestimonialSection({
     </section>
   );
 }
+
+export default TestimonialSection;

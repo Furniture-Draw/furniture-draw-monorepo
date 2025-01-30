@@ -26,9 +26,11 @@
         "libs/login-register-page/src/index.ts"
       ],
       "@furniture-draw/navigation": ["libs/navigation/src/index.ts"],
+      "@furniture-draw/pricing-page": ["libs/pricing-page/src/index.ts"],
       "@furniture-draw/pricingCards": ["libs/pricingCards/src/index.ts"],
       "@furniture-draw/register": ["libs/register/src/index.ts"],
-      "@furniture-draw/sponsors": ["libs/sponsors/src/index.ts"]
+      "@furniture-draw/sponsors": ["libs/sponsors/src/index.ts"],
+      "@furniture-draw/testimonial": ["libs/testimonial/src/index.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]

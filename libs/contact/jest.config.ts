@@ -1,10 +1,14 @@
 export default {
-  displayName: 'contact',
-  preset: '../../jest.preset.js',
-  testEnvironment: 'node',
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
   transform: {
-    '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
+    "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
   },
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/libs/contact',
+  transformIgnorePatterns: [
+    "/node_modules/(?!lucide-react)", // lucide-react modülünü transpile etmeye zorla
+  ],
+  moduleNameMapper: {
+    "^(\\.{1,2}/.*)\\.js$": "$1", // .js uzantılarından kurtul
+    "^lucide-react$": "<rootDir>/node_modules/lucide-react/dist/cjs/index.js", // Lucide'yi CJS olarak kullan
+  },
 };
