@@ -1,0 +1,1 @@
+export { default as PricingCardsPage } from './lib/pricing-page';

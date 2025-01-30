@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["vite/client", "vitest"],
+    "composite": true,
+    "declaration": true,
+    "sourceMap": true,
+    "emitDeclarationOnly": false,
+    "outDir": "../../dist/libs/testimonial"
+  },
+  "files": [],
+  "include": ["src/**/*", "types/**/*.ts"],
+  "outDir": "../../dist/libs/testimonial",
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "../../tsconfig.base.json"
+}

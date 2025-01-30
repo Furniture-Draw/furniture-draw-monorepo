@@ -14,13 +14,14 @@ const StyledCard = styled(Box, {
   flexDirection: 'column',
   padding: theme.spacing(4),
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: variant === 'dark' 
-    ? theme.palette.grey[800] 
-    : theme.palette.background.paper,
+  backgroundColor:
+    variant === 'dark'
+      ? theme.palette.grey[800]
+      : theme.palette.background.paper,
   transition: 'all 0.3s ease-in-out',
   height: '100%',
   boxShadow: theme.shadows[1],
-  
+
   '&:hover': {
     transform: 'translateY(-8px)',
     boxShadow: theme.shadows[4],
@@ -34,7 +35,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   company,
   content,
   rating,
-  variant = 'light'
+  variant = 'light',
 }) => {
   return (
     <StyledCard variant={variant}>
@@ -49,7 +50,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         >
           "{content}"
         </Typography>
-        
+
         <Rating
           value={rating}
           readOnly
@@ -60,13 +61,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           }}
         />
       </Box>
-      
+
       <Box sx={{ mt: 'auto', display: 'flex', alignItems: 'center', gap: 2 }}>
-        <Avatar
-          src={avatarSrc}
-          alt={name}
-          sx={{ width: 48, height: 48 }}
-        />
+        <Avatar src={avatarSrc} alt={name} sx={{ width: 48, height: 48 }} />
         <Box>
           <Typography
             variant="subtitle1"

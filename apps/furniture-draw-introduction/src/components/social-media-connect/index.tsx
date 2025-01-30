@@ -33,7 +33,7 @@ export const SocialMediaConnect = () => {
           }}
         />
       </Link>
-      <Link href="https://www.whatsapp.com">
+      <Link href="https://www.google.com">
         <Google
           sx={{
             width: 40,

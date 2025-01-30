@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import Sponsors from './sponsors';
+import { Sponsors } from './sponsors';
 
 describe('Sponsors', () => {
   it('should render successfully', () => {

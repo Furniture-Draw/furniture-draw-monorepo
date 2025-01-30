@@ -1,14 +1,17 @@
-"use client";
+'use client';
 
-import { Hero } from "@furniture-draw/hero";
+import { Hero } from '@furniture-draw/hero';
+import { useRouter } from 'next/navigation';
 
 export default function Index() {
+  const router = useRouter();
+
   const handleGetStarted = () => {
-    console.log("Get Started clicked");
+    router.push('https://prod.mobilyaplan.app/login');
   };
 
   const handleLearnMore = () => {
-    console.log("Learn More clicked");
+    router.push('http://localhost:3000/about');
   };
 
   return (
@@ -19,14 +22,14 @@ export default function Index() {
         image="https://t4.ftcdn.net/jpg/09/66/48/35/360_F_966483587_MriURsq1UFrnqmAc1Wd27GJLTWA5G74A.jpg"
         actionButtons={[
           {
-            label: "Get Started",
+            label: 'Get Started',
             onClick: handleGetStarted,
-            variant: "contained",
+            variant: 'contained',
           },
           {
-            label: "Learn More",
+            label: 'Learn More',
             onClick: handleLearnMore,
-            variant: "outline",
+            variant: 'outline',
           },
         ]}
       />

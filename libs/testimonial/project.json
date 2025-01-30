@@ -1,0 +1,9 @@
+{
+  "name": "testimonial",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/testimonial/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project testimonial --web",
+  "targets": {}
+}

@@ -1,3 +1,5 @@
+import { SubmitHandler } from "react-hook-form";
+
 export type LoginFormInput = {
   email: string;
   password: string;
@@ -5,7 +7,7 @@ export type LoginFormInput = {
 
 export type LoginPageProps = {
   logo: string;
-  onHandleSubmit: (prop: LoginFormInput) => void;
+  onHandleSubmit: SubmitHandler<LoginFormInput>;
   onGoogleClick?: () => void;
   onFacebookClick?: () => void;
   onGithubClick?: () => void;

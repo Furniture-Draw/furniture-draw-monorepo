@@ -1,0 +1,79 @@
+.sponsors-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Kart tasarımı */
+.sponsor-card {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover efekti */
+.sponsor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Logolar */
+.sponsor-logo {
+  width: 80px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover efekti - Renkli hale getirme */
+.sponsor-card:hover .sponsor-logo {
+  filter: grayscale(0%);
+}
+
+/* Mobil için */
+@media (max-width: 768px) {
+  .sponsors {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.sponsor-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sponsor-card:hover {
+  transform: translateY(-5px) rotate(3deg);
+}
+
+.sponsor-card {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

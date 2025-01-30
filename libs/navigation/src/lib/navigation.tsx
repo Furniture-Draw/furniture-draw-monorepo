@@ -43,7 +43,7 @@ export function Navigation() {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/" className={styles.navLink}>
+            <Link href="/pricing" className={styles.navLink}>
               Pricing
             </Link>
           </li>
