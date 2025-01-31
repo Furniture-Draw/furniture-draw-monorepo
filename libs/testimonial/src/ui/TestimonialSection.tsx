@@ -63,7 +63,7 @@ interface TestimonialSectionProps {
   className?: string;
 }
 
-export function TestimonialSection({
+export function TestimonialCards({
   variant = 'light',
   className,
 }: TestimonialSectionProps) {
@@ -80,4 +80,4 @@ export function TestimonialSection({
   );
 }
 
-export default TestimonialSection;
+export default TestimonialCards;

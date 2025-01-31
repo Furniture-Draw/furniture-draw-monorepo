@@ -3,8 +3,8 @@ body {
 }
 
 footer {
-  background-color: #ffffff; /* Footer arka planını beyaz yaptık */
-  color: #333333; /* Metinler koyu gri */
+  background-color: #043873; /* Footer arka planını beyaz yaptık */
+  color: white; /* Metinler koyu gri */
   font-family: Arial, sans-serif;
   padding: 40px 50px;
   margin: 0;
@@ -34,14 +34,14 @@ footer {
 .footerSection h2,
 .footerSection h3 {
   margin-bottom: 10px;
-  color: #222222; /* Hafif koyu başlık */
+  color: white; /* Hafif koyu başlık */
 }
 
 /* Metin ve link renkleri */
 .footerSection p,
 .footerSection ul,
 .footerSection a {
-  color: #555555; /* Daha yumuşak bir koyu gri */
+  color: white; /* Daha yumuşak bir koyu gri */
 }
 
 /* Liste görünümü */
@@ -57,18 +57,18 @@ footer {
 
 .footerSection ul li a {
   text-decoration: none;
-  color: #007bff; /* Mavi linkler */
+  color: white; /* Mavi linkler */
 }
 
 .footerSection ul li a:hover {
-  color: #0056b3; /* Hover'da koyu mavi */
+  color: white; /* Hover'da koyu mavi */
   text-decoration: underline;
 }
 
 /* Buton tasarımı */
 .callToAction .startButton {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #4f9cf9;
   color: white;
   padding: 12px 20px;
   text-decoration: none;
@@ -83,7 +83,7 @@ footer {
 
 /* Alt bölümü düzenleme */
 .footerBottom {
-  border-top: 1px solid #dddddd; /* Hafif gri çizgi */
+  border-top: 1px solid white; /* Hafif gri çizgi */
   margin-top: 30px;
   padding-top: 15px;
   display: flex;
@@ -94,7 +94,7 @@ footer {
 
 /* Alt kısımdaki linkler */
 .footerLinks a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
 }

@@ -1,7 +1,7 @@
-import { VideoHero } from '@furniture-draw/hero';
+import { VideoHero } from './index'; // videohero yerine ./videohero/index
 import { useRouter } from 'next/navigation'; // next/router yerine next/navigation
 
-export default function HomePage() {
+export default function HeroVideo() {
   const router = useRouter(); // App Router için doğru kullanım
 
   return (

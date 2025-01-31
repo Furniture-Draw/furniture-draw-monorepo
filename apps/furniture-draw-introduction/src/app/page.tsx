@@ -2,23 +2,24 @@
 
 import { Navigation } from '@furniture-draw/navigation';
 import { Sponsors } from '@furniture-draw/sponsors';
-import { TestimonialSection } from '@furniture-draw/testimonial';
-
-import HeadHero from '../components/sections/heroes/hero1';
-import WhatDoWeOffer from '../components/sections/heroes/hero3';
-import VideoHero from '../components/sections/heroes/videohero';
-import PricingCards from './pricingCards/page';
+import { TestimonialCards } from '@furniture-draw/testimonial';
+import { HeroWork } from '@furniture-draw/hero';
+import { HeroComponent } from '@furniture-draw/hero';
+import { HeroVideo } from '@furniture-draw/hero';
+import { FeaturesCards } from '@furniture-draw/hero';
+import { PricingCards } from '@furniture-draw/pricingCards';
 
 export default function Index() {
   return (
     <div className="index">
       <Navigation />
-      <HeadHero />
+      <HeroComponent />
+      <HeroWork />
       <Sponsors />
-      <VideoHero />
-      <WhatDoWeOffer />
+      <HeroVideo />
+      <FeaturesCards />
       <PricingCards />
-      <TestimonialSection />
+      <TestimonialCards />
     </div>
   );
 }

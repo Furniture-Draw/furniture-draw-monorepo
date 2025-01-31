@@ -1,9 +1,9 @@
 'use client';
 
-import { Hero } from '@furniture-draw/hero';
+import { Hero } from './index';
 import { useRouter } from 'next/navigation';
 
-export default function Index() {
+export default function HeroComponent() {
   const router = useRouter();
 
   const handleGetStarted = () => {
