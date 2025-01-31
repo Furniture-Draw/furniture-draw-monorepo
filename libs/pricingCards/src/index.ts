@@ -1,1 +1,1 @@
-export {PricingCardsPage} from './ui/pricingCards-page';
+export {default as PricingCards} from './ui/pricingCards-page/page';

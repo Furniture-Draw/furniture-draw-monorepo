@@ -1,6 +1,6 @@
-import { Hero3 } from '@furniture-draw/hero';
+import { Hero3 } from './index';
 
-export default function Card() {
+export default function FeaturesCards() {
   return (
     <Hero3
       mainTitle="What do we offer?"
