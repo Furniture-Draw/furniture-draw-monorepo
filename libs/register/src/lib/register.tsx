@@ -18,8 +18,8 @@ import GoogleIcon from '@mui/icons-material/Google';
 import GithubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useState } from 'react';
-import Visibility from '@mui/icons-material/Visibility'; 
-import VisibilityOff from '@mui/icons-material/VisibilityOff'; 
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 export const Register = ({
   onHandleSubmit,
@@ -33,14 +33,12 @@ export const Register = ({
     formState: { errors },
   } = useForm<RegisterFormInput>();
 
-  
   const [isChecked, setIsChecked] = useState(false);
-  const [showPassword, setShowPassword] = useState(false); 
+  const [showPassword, setShowPassword] = useState(false);
 
-  
   const handleFormSubmit = (data: RegisterFormInput) => {
     if (!isChecked) {
-      alert('Lütfen gizlilik politikasını kabul edin.');
+      alert('Please accept the privacy policy.');
       return;
     }
     onHandleSubmit(data);
@@ -56,7 +54,7 @@ export const Register = ({
     >
       <Stack
         component="form"
-        onSubmit={handleSubmit(handleFormSubmit)} 
+        onSubmit={handleSubmit(handleFormSubmit)}
         spacing={4}
         sx={{
           minWidth: 350,
@@ -65,14 +63,13 @@ export const Register = ({
       >
         <Typography variant="h5">Create Account</Typography>
         <Stack spacing={2} width={'100%'}>
-          
           <FormControl>
             <InputLabel htmlFor="my-input">Username</InputLabel>
             <Input
               id="my-input"
               aria-describedby="my-helper-text"
               {...register('username', {
-                required: 'Username boş olamaz.',
+                required: 'Username cannot be blank.',
               })}
               error={!!errors.username?.message}
             />
@@ -89,7 +86,7 @@ export const Register = ({
               id="my-input"
               aria-describedby="my-helper-text"
               {...register('email', {
-                required: 'Email boş olamaz.',
+                required: 'Email cannot be blank.',
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   message: 'invalid email address',
@@ -108,16 +105,16 @@ export const Register = ({
             <InputLabel htmlFor="my-password">Password</InputLabel>
             <Input
               id="my-password"
-              type={showPassword ? 'text' : 'password'} 
+              type={showPassword ? 'text' : 'password'}
               aria-describedby="my-helper-text"
               {...register('password', {
-                required: 'Şifre boş olamaz.',
+                required: 'Password cannot be blank.',
               })}
               error={!!errors.password?.message}
               endAdornment={
                 <IconButton
                   aria-label="toggle password visibility"
-                  onClick={() => setShowPassword(!showPassword)} 
+                  onClick={() => setShowPassword(!showPassword)}
                   edge="end"
                 >
                   {showPassword ? <VisibilityOff /> : <Visibility />}
@@ -137,12 +134,10 @@ export const Register = ({
             <Checkbox
               id="my-provicy"
               checked={isChecked}
-            
               onChange={(e) => setIsChecked(e.target.checked)}
-              
             />
           }
-          label="Gizlilik politikasını kabul ediyorum"
+          label="I accept the privacy policy"
         />
         {errors.isPrivacyPolicyAccepted && (
           <FormHelperText error>
@@ -151,12 +146,12 @@ export const Register = ({
         )}
 
         <Button fullWidth variant="contained" type="submit">
-          Kayıt Ol
+          Sign up
         </Button>
 
         {(onGoogleClick || onFacebookClick || onGithubClick) && (
           <Typography textAlign="center" variant="body1">
-            yada
+            or
           </Typography>
         )}
         <Stack

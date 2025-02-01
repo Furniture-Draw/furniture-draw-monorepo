@@ -13,12 +13,16 @@ export interface TestimonialProps {
     containerWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
   }
   
-  export interface TestimonialCard {
+  export interface TestimonialCardProps {
     avatarSrc: string;
     name: string;
     title: string;
     company: string;
     content: string;
+    elevation?: number;
     rating: number;
+    sx?: object;
+    isWhiteCard?: boolean;
   }
+  
   

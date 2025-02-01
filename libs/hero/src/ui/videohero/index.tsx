@@ -1,9 +1,21 @@
-// libs/hero/src/ui/videohero/VideoHero.tsx
 import React from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
-import { styles } from './styles';
-import type { VideoHeroProps } from './types';
-import { getVideoType, getYouTubeEmbedUrl } from './utils';
+
+interface VideoHeroProps {
+  title: string;
+  description: string;
+  ctaButton?: {
+    label: string;
+    onClick: () => void;
+  };
+  videoSrc: string;
+  imageAlt?: string;
+  muted?: boolean;
+  autoPlay?: boolean;
+  loop?: boolean;
+  fallbackImageSrc?: string;
+  furnitureSvg?: string;
+}
 
 export const VideoHero: React.FC<VideoHeroProps> = ({
   title,
@@ -15,73 +27,69 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
   autoPlay = true,
   loop = true,
   fallbackImageSrc = '/api/placeholder/800/600',
+  furnitureSvg,
 }) => {
-  const videoType = getVideoType(videoSrc);
-
-  const renderVideo = () => {
-    if (videoType === 'youtube') {
-      const embedUrl = getYouTubeEmbedUrl(videoSrc);
-      const urlParams = new URLSearchParams({
-        autoplay: autoPlay ? '1' : '0',
-        mute: muted ? '1' : '0',
-        loop: loop ? '1' : '0',
-        controls: '1',
-        rel: '0',
-      });
-
-      return (
-        <Box
-          component="iframe"
-          src={`${embedUrl}?${urlParams.toString()}`}
-          title={imageAlt}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          sx={(theme) => ({
-            width: '100%',
-            height: { xs: '300px', md: '500px' },
-            borderRadius: '16px',
-            boxShadow: theme.shadows[8],
-          })}
-        />
-      );
-    }
-
-    return (
-      <video
-        autoPlay={autoPlay}
-        muted={muted}
-        loop={loop}
-        playsInline
-        controls
-        poster={fallbackImageSrc}
-        style={{
-          width: '100%',
-          height: 'auto',
-          maxHeight: '500px',
-          borderRadius: '16px',
-        }}
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    );
-  };
+  const [firstPart, secondPart] = title.split('Furniture');
 
   return (
-    <Box sx={(theme) => styles(theme).root}>
+    <Box sx={{ py: 8, bgcolor: 'background.default' }}>
       <Container maxWidth="lg">
-        <Box sx={(theme) => styles(theme).contentWrapper}>
-          <Box sx={(theme) => styles(theme).textContent}>
-            <Typography
-              component="h1"
-              variant="h1"
-              sx={(theme) => styles(theme).title}
-            >
-              {title}
-            </Typography>
+        <Box sx={{ 
+          display: 'flex', 
+          flexDirection: { xs: 'column', md: 'row' },
+          alignItems: 'center',
+          gap: 4
+        }}>
+          <Box sx={{ 
+            flex: 1,
+            textAlign: { xs: 'center', md: 'left' },
+            mb: { xs: 4, md: 0 }
+          }}>
+            <Box sx={{ position: 'relative', display: 'inline-block' }}>
+              <Typography
+                component="h1"
+                variant="h1"
+                sx={{
+                  fontSize: { xs: '2.5rem', md: '3.5rem' },
+                  fontWeight: 'bold',
+                  lineHeight: 1.2,
+                  mb: 0
+                }}
+              >
+                {firstPart}
+                <Box component="span" sx={{ position: 'relative', display: 'inline-block' }}>
+                  Furniture
+                  {furnitureSvg && (
+                    <Box
+                      component="img"
+                      src={furnitureSvg}
+                      alt="Furniture Decoration"
+                      sx={{
+                        position: 'absolute',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        top: '100%',
+                        width: '180px',
+                        height: 'auto',
+                        marginTop: '-5px'
+                      }}
+                    />
+                  )}
+                </Box>
+                {secondPart}
+              </Typography>
+            </Box>
 
-            <Typography sx={(theme) => styles(theme).description}>
+            <Typography 
+              sx={{ 
+                fontSize: { xs: '1rem', md: '1.125rem' },
+                color: 'text.secondary',
+                mt: 4,
+                mb: 4,
+                maxWidth: '600px',
+                mx: { xs: 'auto', md: 0 }
+              }}
+            >
               {description}
             </Typography>
 
@@ -90,15 +98,37 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
                 variant="contained"
                 color="primary"
                 onClick={ctaButton.onClick}
-                sx={(theme) => styles(theme).ctaButton}
+                sx={{
+                  py: 1.5,
+                  px: 4,
+                  fontSize: '1.125rem',
+                  borderRadius: 2
+                }}
               >
                 {ctaButton.label}
               </Button>
             )}
           </Box>
 
-          <Box sx={(theme) => styles(theme).videoContainer}>
-            {renderVideo()}
+          <Box sx={{ 
+            flex: 1,
+            width: '100%',
+            maxWidth: { xs: '100%', md: '600px' }
+          }}>
+            <Box
+              component="iframe"
+              src={`https://www.youtube.com/embed/${videoSrc.split('v=')[1]}`}
+              title={imageAlt}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              sx={{
+                width: '100%',
+                height: { xs: '300px', md: '500px' },
+                borderRadius: '16px',
+                boxShadow: 8
+              }}
+            />
           </Box>
         </Box>
       </Container>

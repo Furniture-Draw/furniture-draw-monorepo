@@ -174,7 +174,7 @@ export const PricingCardsPage = () => {
               fontWeight: 800,
               mb: 3,
               fontSize: { xs: '2.5rem', md: '3.5rem' },
-              background: 'linear-gradient(45deg, #1976d2, #82b1ff)',
+              background: '#212529',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               color: 'transparent',
@@ -182,7 +182,10 @@ export const PricingCardsPage = () => {
           >
             Choose Your Plan
           </Typography>
-          <Typography
+          <Box sx={{ display: 'flex', justifyContent: 'center', mb: 4 }}>
+    <img src="/images/Element2.svg" alt="Decorative Element" width="318.75" height="30.11" />
+</Box>
+<Typography
             variant="h6"
             color="text.secondary"
             sx={{
