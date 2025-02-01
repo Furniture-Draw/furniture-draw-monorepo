@@ -1,79 +1,77 @@
+/* Sponsors container */
 .sponsors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  max-width: 1482px;
+  min-height: 87px;
   padding: 40px;
+  margin: auto;
 }
 
+/* Başlık */
+.sponsors-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Sponsor logos container */
 .sponsors {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 80px; /* Daha fazla boşluk eklendi */
+  margin-top: 30px;
 }
 
-/* Kart tasarımı */
+/* Sponsor kartı */
 .sponsor-card {
-  width: 140px;
-  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 16px;
 }
 
 /* Hover efekti */
 .sponsor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1); /* Renk değişimi yerine büyüme efekti */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Logolar */
+/* Logo stilleri */
 .sponsor-logo {
-  width: 80px;
+  width: 100px; /* Daha belirgin olması için büyütüldü */
   height: auto;
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Hover efekti - Renkli hale getirme */
-.sponsor-card:hover .sponsor-logo {
-  filter: grayscale(0%);
+/* Element2.svg stilleri */
+.element-svg {
+  width: auto;
+  height: 40px; /* Daha iyi ölçeklenmesi için ayarlandı */
+  margin-top: -30px;
 }
 
-/* Mobil için */
+/* Responsive Tasarım */
 @media (max-width: 768px) {
   .sponsors {
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
-}
 
-.sponsor-card {
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sponsor-card:hover {
-  transform: translateY(-5px) rotate(3deg);
-}
-
-.sponsor-card {
-  opacity: 0;
-  transform: scale(0.8);
-  animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
+  .sponsor-card {
+    padding: 12px;
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+
+  .sponsor-logo {
+    width: 80px;
   }
 }

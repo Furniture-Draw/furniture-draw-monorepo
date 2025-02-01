@@ -68,7 +68,7 @@ export function Hero({
                   fontWeight: 800,
                   fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
                   lineHeight: 1.2,
-                  color: 'text.primary',
+                  color: '#4F9CF9',
                   letterSpacing: '-0.02em',
                 }}
               >
@@ -78,7 +78,7 @@ export function Hero({
               <Typography
                 variant="h6"
                 sx={{
-                  color: 'text.secondary',
+                  color: '#4F9CF9',
                   fontSize: { xs: '1.1rem', md: '1.25rem' },
                   lineHeight: 1.6,
                 }}
