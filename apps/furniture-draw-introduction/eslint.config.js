@@ -1,22 +1,31 @@
-const { FlatCompat } = require('@eslint/eslintrc');
-const js = require('@eslint/js');
-const { fixupConfigRules } = require('@eslint/compat');
-const nx = require('@nx/eslint-plugin');
-const baseConfig = require('../../eslint.config.js');
+// apps/furniture-draw-introduction/eslint.config.js
+
+import { fileURLToPath } from 'node:url';
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import nx from '@nx/eslint-plugin';
+import baseConfig from '../../eslint.config.js';
+
+// Dosya yolunu Windows uyumlu şekilde belirleyin
+const baseDirectory = fileURLToPath(new URL('.', import.meta.url));
 
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
+  baseDirectory,
   recommendedConfig: js.configs.recommended,
 });
 
-module.exports = [
-  ...fixupConfigRules(compat.extends('next')),
-
-  ...fixupConfigRules(compat.extends('next/core-web-vitals')),
-
+const eslintConfig = [
+  // Next.js konfigürasyonlarını paket adıyla genişletiyoruz
+  ...compat.extends('eslint-config-next'),
+  ...compat.extends('eslint-config-next/core-web-vitals'),
+  // Monorepo kök dizindeki genel ESLint ayarlarınız
   ...baseConfig,
+  // NX tarafından önerilen React-Typescript ayarları
   ...nx.configs['flat/react-typescript'],
+  // .next klasöründeki dosyaları yoksay
   {
     ignores: ['.next/**/*'],
   },
 ];
+
+export default eslintConfig;

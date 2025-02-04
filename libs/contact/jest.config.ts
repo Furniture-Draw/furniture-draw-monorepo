@@ -1,3 +1,4 @@
+// jest.config.js
 export default {
   preset: "ts-jest",
   testEnvironment: "jsdom",
@@ -5,10 +6,6 @@ export default {
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
   },
   transformIgnorePatterns: [
-    "/node_modules/(?!lucide-react)", // lucide-react modülünü transpile etmeye zorla
+    "node_modules/(?!lucide-react)"
   ],
-  moduleNameMapper: {
-    "^(\\.{1,2}/.*)\\.js$": "$1", // .js uzantılarından kurtul
-    "^lucide-react$": "<rootDir>/node_modules/lucide-react/dist/cjs/index.js", // Lucide'yi CJS olarak kullan
-  },
 };

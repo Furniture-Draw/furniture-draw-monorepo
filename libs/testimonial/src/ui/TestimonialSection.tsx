@@ -1,7 +1,16 @@
 import { Testimonial } from './index';
 
+export type TestimonialData = {
+  avatarSrc: string;
+  name: string;
+  title: string;
+  company: string;
+  content: string;
+  rating: number;
+};
+
 // Mock data - gerçek projede bu veri API'den gelebilir
-const testimonialData = [
+const testimonialData: TestimonialData[] = [
   {
     avatarSrc: 'https://i.pravatar.cc/150?img=1',
     name: 'Jessie Owner',

@@ -18,22 +18,29 @@ jobs:
         with:
           fetch-depth: 0
 
-      # This enables task distribution via Nx Cloud
-      # Run this command as early as possible, before dependencies are installed
-      # Learn more at https://nx.dev/ci/reference/nx-cloud-cli#npx-nxcloud-startcirun
-      # Uncomment this line to enable task distribution
+      # Nx Cloud için (dağıtımlı görevler) erken başlatma – ihtiyacınız varsa açabilirsiniz
       # - run: npx nx-cloud start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="build"
 
-      # Cache node_modules
+      # Node kurulumu ve yarn cache’i ayarlıyoruz
       - uses: actions/setup-node@v4
         with:
           node-version: 20.9.0
           cache: 'yarn'
 
-      - run: yarn install
+      - name: Install Dependencies
+        run: yarn install
+
       - uses: nrwl/nx-set-shas@v4
 
-      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: npx nx-cloud record -- echo Hello World
-      # Nx Affected runs only tasks affected by the changes in this PR/commit. Learn more: https://nx.dev/ci/features/affected
+      # Next.js build cache’ini saklamak için cache adımı ekliyoruz
+      - name: Cache Next.js Build Cache
+        uses: actions/cache@v3
+        with:
+          # Eğer monorepo kullanıyorsanız, cache yolunu ilgili projeye göre ayarlayın (örn: apps/web/.next/cache)
+          path: .next/cache
+          key: ${{ runner.os }}-next-cache-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-next-cache-
+
+      # Nx affected komutu ile değişikliklerden etkilenen görevleri çalıştırıyoruz
       - run: npx nx affected -t lint test build

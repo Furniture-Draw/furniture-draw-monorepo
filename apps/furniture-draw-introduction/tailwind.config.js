@@ -1,8 +1,13 @@
-const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
-const { join } = require('path');
+import { createGlobPatternsForDependencies } from '@nx/react/tailwind';
+import { join } from 'path';
+import { fileURLToPath } from 'url';
+
+// __dirname yerine, ESM içinde doğru yolu almak için aşağıdaki kod gerekiyor:
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = join(__filename, '..');
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const tailwindConfig = {
   content: [
     join(
       __dirname,
@@ -15,3 +20,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default tailwindConfig;
