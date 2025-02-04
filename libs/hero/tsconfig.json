@@ -7,9 +7,20 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "composite": true,
+    "types": ["jest", "@testing-library/jest-dom"],
+    "moduleResolution": "node"
   },
   "files": [],
-  "include": [],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "src/ui/hero/hero.tsx",
+    "src/ui/hero/hero.test.tsx"
+  ],
   "references": [
     {
       "path": "./tsconfig.lib.json"

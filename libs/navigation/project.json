@@ -5,5 +5,14 @@
   "projectType": "library",
   "tags": [],
   "// targets": "to see all targets run: nx show project navigation --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/libs/navigation",
+        "tsConfig": "libs/navigation/tsconfig.lib.json",
+        "main": "libs/navigation/src/index.ts"
+      }
+    }
+  }
 }

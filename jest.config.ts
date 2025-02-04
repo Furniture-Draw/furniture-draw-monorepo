@@ -1,5 +1,11 @@
-import { getJestProjectsAsync } from '@nx/jest';
+import { getJestProjects } from '@nx/jest';
 
-export default async () => ({
-  projects: await getJestProjectsAsync(),
-});
+export default {
+  preset: '../../jest.preset.js',
+  testEnvironment: 'node',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
+  projects: getJestProjects(),
+};

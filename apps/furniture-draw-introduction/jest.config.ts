@@ -1,10 +1,13 @@
-export default {
-  displayName: 'furniture-draw-introduction',
-  preset: '../../jest.preset.js',
-  transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
-  },
+import { getJestProjectsAsync } from '@nx/jest';
+
+const jestConfig = async () => ({
+  preset: '../../jest.preset.mjs',
+  testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/furniture-draw-introduction',
-};
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
+  projects: await getJestProjectsAsync(),
+});
+
+export default jestConfig;

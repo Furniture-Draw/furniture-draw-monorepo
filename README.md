@@ -1,101 +1,99 @@
 # FurnitureDraw
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+**FurnitureDraw** is a modern application designed to simplify and accelerate furniture design processes. This project leverages the [Nx](https://nx.dev) monorepo structure to provide a scalable, modular, and optimized development experience.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+## 🚀 Getting Started
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+Follow these steps to get started with the project.
 
-## Run tasks
-
-To run the dev server for your app, use:
+### 1️⃣ Install Yarn Globally
 
 ```sh
-npx nx dev furniture-draw-introduction
+npm install -g yarn
 ```
 
-To create a production bundle:
+### 2️⃣ Install Dependencies
 
 ```sh
-npx nx build furniture-draw-introduction
+yarn install
 ```
 
-To see all available targets to run for a project, run:
+### 3️⃣ Start the Development Server
 
 ```sh
-npx nx show project furniture-draw-introduction
+yarn nx dev furniture-draw-introduction
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
+### 4️⃣ Build for Production
 
 ```sh
-npx nx g @nx/next:app demo
+yarn nx build furniture-draw-introduction
 ```
 
-To generate a new library, use:
+### 5️⃣ View Available Targets
+
+To see all available commands for this project:
 
 ```sh
-npx nx g @nx/react:lib mylib
+yarn nx show project furniture-draw-introduction
 ```
 
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
+## 📦 Add New Projects and Modules
 
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+**Nx** provides powerful code generation tools to scale your project. You can create new applications or libraries.
 
-## Set up CI!
-
-### Step 1
-
-To connect to Nx Cloud, run the following command:
+To create a new application:
 
 ```sh
-npx nx connect
+yarn nx g @nx/next:app demo
 ```
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
-
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
+To create a new library:
 
 ```sh
-npx nx g ci-workflow
+yarn nx g @nx/react:lib mylib
 ```
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+To list installed plugins:
 
-## Install Nx Console
+```sh
+yarn nx list
+```
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+For more details, refer to the [Nx Plugins](https://nx.dev/concepts/nx-plugins) documentation.
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## 🔗 Continuous Integration (CI) Setup
 
-## Useful links
+Connect to Nx Cloud to integrate your project with CI/CD processes.
+
+1. **Connect to Nx Cloud:**
+
+   ```sh
+   yarn nx connect
+   ```
+
+2. **Generate a CI Workflow:**
+
+   ```sh
+   yarn nx g ci-workflow
+   ```
+
+For more details: [Nx Cloud and CI Integration](https://nx.dev/ci/intro/ci-with-nx)
+
+## 🛠 Enhance Development with Nx Console
+
+[Nx Console](https://nx.dev/getting-started/editor-setup) is an IDE extension that improves your development experience. It is available for VSCode and IntelliJ.
+
+## 📚 Resources and Community
 
 Learn more:
 
-- [Learn more about this workspace setup](https://nx.dev/nx-api/next?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- [Nx Documentation](https://nx.dev/nx-api/next)
+- [Nx Blog](https://nx.dev/blog)
+- [Nx Discord](https://go.nx.dev/community)
+- [Twitter/X](https://twitter.com/nxdevtools)
+- [LinkedIn](https://www.linkedin.com/company/nrwl)
+- [YouTube Channel](https://www.youtube.com/@nxdevtools)
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Start your development journey with FurnitureDraw and optimize modern furniture design processes! 🚀
+

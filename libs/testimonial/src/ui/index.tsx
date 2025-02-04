@@ -3,7 +3,15 @@ import { Box, Container, Typography, IconButton } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import TestimonialCard from './TestimonialCard';
-import { TestimonialProps } from '../types';
+import { TestimonialData } from './TestimonialSection';
+
+interface TestimonialProps {
+  heading: string;
+  testimonials: TestimonialData[];
+  variant?: 'light' | 'dark';
+  cardsPerView?: number;
+  containerWidth?: 'sm' | 'md' | 'lg' | 'xl' | 'full';
+}
 
 const NavigationButton = styled(IconButton)(({ theme }) => ({
   backgroundColor: theme.palette.common.white,
@@ -19,11 +27,12 @@ const NavigationButton = styled(IconButton)(({ theme }) => ({
 }));
 
 export function Testimonial({
-  heading = 'See what our trusted users Say',
-  testimonials = [],
+  heading,
+  testimonials,
+  variant = 'light',
   cardsPerView = 3,
   containerWidth = 'lg',
-}) {
+}: TestimonialProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
@@ -151,4 +160,5 @@ export function Testimonial({
   );
 }
 
+export type { TestimonialProps };
 export default Testimonial;

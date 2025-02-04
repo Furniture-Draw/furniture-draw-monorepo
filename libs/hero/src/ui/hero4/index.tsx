@@ -9,12 +9,12 @@ export default function Hero() {
   return (
     <main>
       <HeroWork
-        title="Your work, everywhere you are"
-        description="Access your notes from your computer, phone or tablet by synchronizing with various services, including whitepace, Dropbox, and OneDrive."
+        title="Design & Manage Your Furniture Projects"
+        description="Plan, customize, and bring your furniture ideas to life. Collaborate with designers and manage your projects seamlessly with Mobilyaplan."
         image="/images/BACKGROUND.svg"
         actionButtons={[
           {
-            label: 'Try Taskey',
+            label: 'Get Started',
             onClick: () => router.push('https://prod.mobilyaplan.app/'),
             variant: 'contained',
           },
