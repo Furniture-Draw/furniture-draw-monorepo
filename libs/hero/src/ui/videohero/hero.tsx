@@ -1,8 +1,7 @@
-import { VideoHero } from './index'; // videohero yerine ./videohero/index
-import { useRouter } from 'next/navigation'; // next/router yerine next/navigation
-
+import { VideoHero } from './index';
+import { useRouter } from 'next/navigation';
 export default function HeroVideo() {
-  const router = useRouter(); // App Router için doğru kullanım
+  const router = useRouter();
 
   return (
     <VideoHero

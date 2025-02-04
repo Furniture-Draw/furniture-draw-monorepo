@@ -29,9 +29,12 @@ export function Hero({
         minHeight: '90vh',
         display: 'flex',
         alignItems: 'center',
-        mt: { xs: 8, md: 0 }, // Add margin top for spacing from navigation
+        justifyContent: 'center',
+        mt: { xs: 8, md: 0 },
         position: 'relative',
         overflow: 'hidden',
+        paddingX: { xs: 2, sm: 4, md: 6, lg: 8 },
+        paddingY: { xs: 4, md: 8 },
         '&::before': {
           content: '""',
           position: 'absolute',
@@ -53,20 +56,27 @@ export function Hero({
           sx={{
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
-            gap: { xs: 6, md: 8 },
+            gap: { xs: 4, md: 8 },
             alignItems: 'center',
-            py: { xs: 6, md: 10 },
+            justifyContent: 'center',
+            width: '100%',
           }}
         >
           {/* Content Section */}
-          <Box sx={{ flex: 1, maxWidth: { xs: '100%', md: '50%' } }}>
-            <Stack spacing={4}>
+          <Box
+            sx={{
+              flex: 1,
+              maxWidth: { xs: '100%', md: '50%' },
+              textAlign: { xs: 'center', md: 'left' },
+            }}
+          >
+            <Stack spacing={3}>
               <Typography
                 component="h1"
                 variant="h2"
                 sx={{
                   fontWeight: 800,
-                  fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
+                  fontSize: { xs: '2rem', md: '3rem', lg: '4rem' },
                   lineHeight: 1.2,
                   color: '#4F9CF9',
                   letterSpacing: '-0.02em',
@@ -79,7 +89,7 @@ export function Hero({
                 variant="h6"
                 sx={{
                   color: '#4F9CF9',
-                  fontSize: { xs: '1.1rem', md: '1.25rem' },
+                  fontSize: { xs: '1rem', md: '1.25rem' },
                   lineHeight: 1.6,
                 }}
               >
@@ -87,7 +97,11 @@ export function Hero({
               </Typography>
 
               {actionButtons.length > 0 && (
-                <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
+                <Stack
+                  direction={{ xs: 'column', sm: 'row' }}
+                  spacing={2}
+                  justifyContent={{ xs: 'center', md: 'flex-start' }}
+                >
                   {actionButtons.map((button: ActionButton, index: number) => (
                     <Button
                       key={index}
@@ -103,7 +117,7 @@ export function Hero({
                         py: 1.5,
                         px: 4,
                         borderRadius: 2,
-                        fontSize: '1.1rem',
+                        fontSize: '1rem',
                         fontWeight: 600,
                         textTransform: 'none',
                         '&:hover': {
@@ -132,28 +146,14 @@ export function Hero({
                 width: '100%',
                 maxWidth: { xs: '100%', md: '50%' },
                 position: 'relative',
-                '&::before': {
-                  content: '""',
-                  position: 'absolute',
-                  top: '10%',
-                  left: '10%',
-                  width: '80%',
-                  height: '80%',
-                  background: (theme) => theme.palette.primary.main,
-                  opacity: 0.1,
-                  borderRadius: 4,
-                  transform: 'rotate(-6deg)',
-                  zIndex: 0,
-                },
+                display: 'flex',
+                justifyContent: 'center',
                 '& img': {
                   width: '100%',
-                  height: 'auto',
-                  maxHeight: 600,
+                  maxWidth: 600,
                   borderRadius: 4,
                   objectFit: 'cover',
                   boxShadow: (theme) => theme.shadows[8],
-                  position: 'relative',
-                  zIndex: 1,
                   transition: 'transform 0.3s ease-in-out',
                   '&:hover': {
                     transform: 'scale(1.02)',
