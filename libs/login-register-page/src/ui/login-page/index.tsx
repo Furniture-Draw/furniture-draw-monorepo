@@ -16,7 +16,6 @@ import {
 import GoogleIcon from '@mui/icons-material/Google';
 import GithubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
-<<<<<<< Updated upstream
 import { Navigation } from '@furniture-draw/navigation';
 import { useRouter } from 'next/navigation';
 import './style.css';
@@ -25,17 +24,6 @@ export const LoginPage = ({
   logo,
   onHandleSubmit,
   onGoogleClick,
-=======
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
-export const AUTH_ENDPOINTS = {
-  login: `${API_BASE_URL}/auth/login`,
-};
-
-export const LoginPage = ({
-  logo,
->>>>>>> Stashed changes
   onFacebookClick,
   onGithubClick,
 }: LoginPageProps) => {
@@ -45,7 +33,6 @@ export const LoginPage = ({
     formState: { errors },
   } = useForm<LoginFormInput>();
 
-<<<<<<< Updated upstream
   const router = useRouter();
 
   return (
@@ -53,72 +40,6 @@ export const LoginPage = ({
       <div className="navigation-container">
         <Navigation />
       </div>
-=======
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
-  const [loginMessage, setLoginMessage] = useState<string | null>(null);
-
-  const handleFormSubmit = async (data: LoginFormInput) => {
-    setLoading(true);
-    try {
-      const response = await fetch(AUTH_ENDPOINTS.login, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: data.email,
-          password: data.password,
-        }),
-      });
-  
-      const result = await response.text(); 
-  
-      if (response.status === 401) {
-        setLoginMessage('Invalid email or password.');
-        return;
-      }
-  
-      if (!response.ok) {
-        throw new Error('Login failed.');
-      }
-  
-      
-      if (result === "Login successful") {
-        setLoginMessage('Login successful');
-        alert('Login successful');
-        router.push('http://localhost:3000');
-      } else {
-        setLoginMessage(result); 
-      }
-  
-    } catch (error) {
-      console.error('Login error:', error);
-      setLoginMessage('Login failed. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <Container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Stack
-        component="form"
-        onSubmit={handleSubmit(handleFormSubmit)} // Use handleFormSubmit directly
-        spacing={4}
-        sx={{
-          minWidth: 350,
-        }}
-        alignItems="center"
-      >
-        <img src={logo} alt="company logo" style={{ maxWidth: 300 }} />
->>>>>>> Stashed changes
 
       <Container className="login-content">
         <Box className="login-card">
@@ -201,7 +122,6 @@ export const LoginPage = ({
               )}
             </Stack>
 
-<<<<<<< Updated upstream
             <Typography variant="body2" className="register-text">
               Don't have an account?
               <Button
@@ -215,50 +135,5 @@ export const LoginPage = ({
         </Box>
       </Container>
     </div>
-=======
-        {loginMessage && <Typography variant="body1">{loginMessage}</Typography>} {/* Display login message */}
-
-        {(onGoogleClick || onFacebookClick || onGithubClick) && (
-          <Typography textAlign="center" variant="body1">
-            yada
-          </Typography>
-        )}
-
-        <Stack
-          direction="row"
-          justifyContent="space-around"
-          divider={<Divider orientation="vertical" flexItem />}
-        >
-          {onGoogleClick && (
-            <IconButton
-              onClick={onGoogleClick}
-              sx={{ maxWidth: 60 }}
-              aria-label="google ikon"
-            >
-              <GoogleIcon />
-            </IconButton>
-          )}
-          {onFacebookClick && (
-            <IconButton
-              onClick={onFacebookClick}
-              sx={{ maxWidth: 60 }}
-              aria-label="facebook ikon"
-            >
-              <FacebookIcon />
-            </IconButton>
-          )}
-          {onGithubClick && (
-            <IconButton
-              onClick={onGithubClick}
-              sx={{ maxWidth: 60 }}
-              aria-label="github ikon"
-            >
-              <GithubIcon />
-            </IconButton>
-          )}
-        </Stack>
-      </Stack>
-    </Container>
->>>>>>> Stashed changes
   );
 };
