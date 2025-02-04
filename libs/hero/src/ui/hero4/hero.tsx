@@ -23,7 +23,7 @@ export default function HeroWork({
 }: HeroProps) {
   return (
     <section
-      className="relative flex flex-col items-center justify-center h-screen text-white text-center px-8"
+      className="relative flex flex-col items-center justify-center h-[574px] text-white text-center px-8"
       style={{
         backgroundColor: '#043873',
         backgroundImage: "url('./images/BACKGROUND.svg')",
@@ -58,7 +58,7 @@ export default function HeroWork({
                 className={`px-6 py-3 rounded-lg shadow-lg transition ${
                   button.variant === 'outlined'
                     ? 'border border-white text-white'
-                    : 'bg-blue-400 text-white hover:bg-blue-500'
+                    : 'bg-blue-400 text-white hover:bg-blue-400'
                 }`}
                 onClick={button.onClick}
               >
