@@ -26,6 +26,7 @@
     "@jridgewell/trace-mapping" "^0.3.24"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@ampproject/toolbox-core@^1.0.1", "@ampproject/toolbox-core@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@ampproject/toolbox-core/-/toolbox-core-1.1.1.tgz#540c8f3ab0f5d1faa1ba35282cd5f5f3f0e16a76"
@@ -55,6 +56,9 @@
 =======
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.0":
 >>>>>>> Stashed changes
+=======
+"@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7", "@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.0":
+>>>>>>> Stashed changes
   version "7.26.2"
   resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.26.2.tgz"
   integrity sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==
@@ -63,6 +67,7 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 "@babel/compat-data@^7.22.6", "@babel/compat-data@^7.26.5":
   version "7.26.5"
@@ -77,6 +82,11 @@
 "@babel/compat-data@^7.22.6", "@babel/compat-data@^7.25.9", "@babel/compat-data@^7.26.0":
   version "7.26.2"
 
+=======
+"@babel/compat-data@^7.22.6", "@babel/compat-data@^7.25.9", "@babel/compat-data@^7.26.0":
+  version "7.26.2"
+
+>>>>>>> Stashed changes
 "@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.0.0-0 || ^8.0.0-0 <8.0.0", "@babel/core@^7.11.6", "@babel/core@^7.12.0", "@babel/core@^7.12.3", "@babel/core@^7.13.0", "@babel/core@^7.14.5", "@babel/core@^7.21.3", "@babel/core@^7.23.2", "@babel/core@^7.23.9", "@babel/core@^7.26.0", "@babel/core@^7.4.0 || ^8.0.0-0 <8.0.0", "@babel/core@^7.8.0", "@babel/core@>=7.0.0-beta.0 <8":
   version "7.26.0"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.26.0.tgz"
@@ -100,10 +110,15 @@
     semver "^6.3.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/generator@^7.26.5", "@babel/generator@^7.7.2":
   version "7.26.5"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.26.5.tgz#e44d4ab3176bbcaf78a5725da5f1dc28802a9458"
   integrity sha512-2caSP6fN9I7HOe6nqhtft7V4g7/V/gfDsC3Ag4W7kEzzvRGKqiv0pu0HogPiZ3KaVSoNDhUws6IJjDjpfmYIXw==
+=======
+"@babel/generator@^7.25.9", "@babel/generator@^7.26.0", "@babel/generator@^7.7.2":
+  version "7.26.2"
+>>>>>>> Stashed changes
 =======
 "@babel/generator@^7.25.9", "@babel/generator@^7.26.0", "@babel/generator@^7.7.2":
   version "7.26.2"
@@ -123,10 +138,15 @@
     "@babel/types" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/helper-compilation-targets@^7.22.6", "@babel/helper-compilation-targets@^7.25.9", "@babel/helper-compilation-targets@^7.26.5":
   version "7.26.5"
   resolved "https://registry.yarnpkg.com/@babel/helper-compilation-targets/-/helper-compilation-targets-7.26.5.tgz#75d92bb8d8d51301c0d49e52a65c9a7fe94514d8"
   integrity sha512-IXuyn5EkouFJscIDuFF5EsiSolseme1s0CZB+QxVugqJLYmKdxI1VfIBOst0SUu4rnk2Z7kqTwmoO1lp3HIfnA==
+=======
+"@babel/helper-builder-binary-assignment-operator-visitor@^7.25.9":
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
 "@babel/helper-builder-binary-assignment-operator-visitor@^7.25.9":
   version "7.25.9"
@@ -280,12 +300,19 @@
     "@babel/types" "^7.26.7"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.23.9", "@babel/parser@^7.25.3", "@babel/parser@^7.25.4", "@babel/parser@^7.25.9", "@babel/parser@^7.26.5", "@babel/parser@^7.26.7":
   version "7.26.7"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.26.7.tgz#e114cd099e5f7d17b05368678da0fb9f69b3385c"
   integrity sha512-kEvgGGgEjRUutvdVvZhbn/BxVt+5VSpwXz1j3WYXQbXDo8KzFOPNG2GQbdAiNq8g6wn1yKk7C/qrke03a84V+w==
   dependencies:
     "@babel/types" "^7.26.7"
+=======
+"@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.23.9", "@babel/parser@^7.25.3", "@babel/parser@^7.25.4", "@babel/parser@^7.25.9", "@babel/parser@^7.26.0", "@babel/parser@^7.26.2":
+  version "7.26.2"
+  dependencies:
+    "@babel/types" "^7.26.0"
+>>>>>>> Stashed changes
 =======
 "@babel/parser@^7.1.0", "@babel/parser@^7.14.7", "@babel/parser@^7.20.7", "@babel/parser@^7.23.9", "@babel/parser@^7.25.3", "@babel/parser@^7.25.4", "@babel/parser@^7.25.9", "@babel/parser@^7.26.0", "@babel/parser@^7.26.2":
   version "7.26.2"
@@ -513,10 +540,15 @@
     "@babel/helper-remap-async-to-generator" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/plugin-transform-block-scoped-functions@^7.26.5":
   version "7.26.5"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-block-scoped-functions/-/plugin-transform-block-scoped-functions-7.26.5.tgz#3dc4405d31ad1cbe45293aa57205a6e3b009d53e"
   integrity sha512-chuTSY+hq09+/f5lMj8ZSYgCFpppV2CbYrhNFJ1BFoXpiWPnnAb7R0MqrafCpN8E1+YRrtM1MXZHJdIx8B6rMQ==
+=======
+"@babel/plugin-transform-block-scoped-functions@^7.25.9":
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
 "@babel/plugin-transform-block-scoped-functions@^7.25.9":
   version "7.25.9"
@@ -605,10 +637,15 @@
     "@babel/helper-plugin-utils" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/plugin-transform-exponentiation-operator@^7.26.3":
   version "7.26.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-exponentiation-operator/-/plugin-transform-exponentiation-operator-7.26.3.tgz#e29f01b6de302c7c2c794277a48f04a9ca7f03bc"
   integrity sha512-7CAHcQ58z2chuXPWblnn1K6rLDnDWieghSOEmqQsrBenH0P9InCUtOJYD89pvngljmZlJcz3fcmgYsXFNGa1ZQ==
+=======
+"@babel/plugin-transform-exponentiation-operator@^7.25.9":
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
 "@babel/plugin-transform-exponentiation-operator@^7.25.9":
   version "7.25.9"
@@ -678,10 +715,15 @@
     "@babel/helper-plugin-utils" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/plugin-transform-modules-commonjs@^7.25.9", "@babel/plugin-transform-modules-commonjs@^7.26.3":
   version "7.26.3"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.26.3.tgz#8f011d44b20d02c3de44d8850d971d8497f981fb"
   integrity sha512-MgR55l4q9KddUDITEzEFYn5ZsGDXMSsU9E+kh7fjRXTIC3RHqfCo8RPRbyReYJh44HQ/yomFkqbOFohXvDCiIQ==
+=======
+"@babel/plugin-transform-modules-commonjs@^7.25.9":
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
 "@babel/plugin-transform-modules-commonjs@^7.25.9":
   version "7.25.9"
@@ -725,10 +767,15 @@
     "@babel/helper-plugin-utils" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/plugin-transform-nullish-coalescing-operator@^7.26.6":
   version "7.26.6"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-nullish-coalescing-operator/-/plugin-transform-nullish-coalescing-operator-7.26.6.tgz#fbf6b3c92cb509e7b319ee46e3da89c5bedd31fe"
   integrity sha512-CKW8Vu+uUZneQCPtXmSBUC6NCAUdya26hWCElAWh5mVSlSRsmiCPUUDKb3Z0szng1hiAJa098Hkhg9o4SE35Qw==
+=======
+"@babel/plugin-transform-nullish-coalescing-operator@^7.25.9":
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
 "@babel/plugin-transform-nullish-coalescing-operator@^7.25.9":
   version "7.25.9"
@@ -940,9 +987,13 @@
 
 "@babel/plugin-transform-typescript@^7.25.9":
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   version "7.26.7"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.26.7.tgz#64339515ea3eff610160f62499c3ef437d0ac83d"
   integrity sha512-5cJurntg+AT+cgelGP9Bt788DKiAw9gIMSMU2NJrLAilnj0m8WZWUNZPSLOmadYsujHutpgElO+50foX+ib/Wg==
+=======
+  version "7.25.9"
+>>>>>>> Stashed changes
 =======
   version "7.25.9"
 >>>>>>> Stashed changes
@@ -1119,6 +1170,7 @@
     "@babel/types" "^7.25.9"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@babel/traverse@^7.16.0", "@babel/traverse@^7.25.9", "@babel/traverse@^7.26.5", "@babel/traverse@^7.26.7":
   version "7.26.7"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.26.7.tgz#99a0a136f6a75e7fb8b0a1ace421e0b25994b8bb"
@@ -1136,6 +1188,21 @@
   version "7.26.7"
   resolved "https://registry.yarnpkg.com/@babel/types/-/types-7.26.7.tgz#5e2b89c0768e874d4d061961f3a5a153d71dc17a"
   integrity sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg==
+=======
+"@babel/traverse@^7.16.0", "@babel/traverse@^7.25.9":
+  version "7.25.9"
+  dependencies:
+    "@babel/code-frame" "^7.25.9"
+    "@babel/generator" "^7.25.9"
+    "@babel/parser" "^7.25.9"
+    "@babel/template" "^7.25.9"
+    "@babel/types" "^7.25.9"
+    debug "^4.3.1"
+    globals "^11.1.0"
+
+"@babel/types@^7.0.0", "@babel/types@^7.20.7", "@babel/types@^7.21.3", "@babel/types@^7.25.4", "@babel/types@^7.25.9", "@babel/types@^7.26.0", "@babel/types@^7.3.3", "@babel/types@^7.4.4":
+  version "7.26.0"
+>>>>>>> Stashed changes
 =======
 "@babel/traverse@^7.16.0", "@babel/traverse@^7.25.9":
   version "7.25.9"
@@ -1297,6 +1364,7 @@
   integrity sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@esbuild/aix-ppc64@0.24.2":
   version "0.24.2"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.24.2.tgz#38848d3e25afe842a7943643cbcd387cc6e13461"
@@ -1422,6 +1490,8 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.24.2.tgz#34aa0b52d0fbb1a654b596acfa595f0c7b77a77b"
   integrity sha512-7VTgWzgMGvup6aSqDPLiW5zHaxYJGTO4OokMjIlrCtf+VpEL+cXKtCvg723iguPYI5oaUNdS+/V7OU2gvXVWEg==
 =======
+=======
+>>>>>>> Stashed changes
 "@esbuild/win32-x64@0.21.5":
   version "0.21.5"
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz"
@@ -1488,6 +1558,7 @@
     strip-json-comments "^3.1.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@eslint/js@9.19.0", "@eslint/js@^9.8.0":
   version "9.19.0"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.19.0.tgz#51dbb140ed6b49d05adc0b171c41e1a8713b7789"
@@ -1507,6 +1578,8 @@
     levn "^0.4.1"
 
 =======
+=======
+>>>>>>> Stashed changes
 "@eslint/js@^9.8.0":
   version "9.17.0"
 
@@ -1515,6 +1588,9 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.1.tgz"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 "@fontsource/roboto@^5.1.0":
   version "5.1.0"
@@ -2534,6 +2610,7 @@
   integrity sha512-CysUC9IO+2Bh0omJ3qrb47S8DtsTKbFidGm6ow4gXIG6reZybqxbkH2nhdEm1tC8SmgzDdpq3BIML0PWsmyUYA==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@next/eslint-plugin-next@15.1.6":
   version "15.1.6"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-15.1.6.tgz#1d6d0fd21f58a650821bafeb3a205b25276ce5e3"
@@ -2544,6 +2621,12 @@
 >>>>>>> Stashed changes
   dependencies:
     fast-glob "3.3.1"
+=======
+"@next/eslint-plugin-next@14.2.16":
+  version "14.2.16"
+  dependencies:
+    glob "10.3.10"
+>>>>>>> Stashed changes
 
 "@next/swc-win32-x64-msvc@14.2.23":
   version "14.2.23"
@@ -2577,15 +2660,35 @@
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/devkit@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/devkit/-/devkit-20.4.0.tgz#0f3a7659b8d92074f0f2fee74f18f72e2f08e9ac"
   integrity sha512-qog9oGbuz7DDoXH5k+19tTI3WtaR1p9G5NobiDPfcWmsr1BTK2WH2V2/vVYFAfAcM/DEFgK3ITC5L3PSaJvMmw==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/devkit@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/devkit/-/devkit-20.1.4.tgz"
   integrity sha512-Opz7eRPmpt3e4SGkbwZbE9Bg3MhKeivh1QTNCj4tQVAB4gucz0lW/F3mdtRDFdj6gUbqIc5rRrbO/DGlNaEzYw==
+<<<<<<< Updated upstream
+=======
+  dependencies:
+    ejs "^3.1.7"
+    enquirer "~2.3.6"
+    ignore "^5.0.4"
+    minimatch "9.0.3"
+    semver "^7.5.3"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "21.1.1"
+
+"@nx/devkit@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/devkit/-/devkit-20.3.2.tgz"
+  integrity sha512-VhbxEsSTCZlOVgjuQC+6HQmb9Oz9VoHUeo4001Pw6BFBcSXZUi5q37C/lxbAgQPnMKLkFcLva3WKZ+fOLwhGIg==
+>>>>>>> Stashed changes
   dependencies:
     ejs "^3.1.7"
     enquirer "~2.3.6"
@@ -2635,15 +2738,32 @@
     tslib "^2.3.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/eslint@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/eslint/-/eslint-20.4.0.tgz#3b3e79c0234ebb846d48e6980c0f25680b1de8f4"
   integrity sha512-w22DzI7ErmFlSyxdmUdUkz1+zCbLAaG3iId/6Jt27JO1jL/u/AoCGm3XlAMsRn+6EbOxu4IQQ/poxyYomHZNMQ==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/eslint@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/eslint/-/eslint-20.1.4.tgz"
   integrity sha512-Qq5Hq4LA+3aYgPvBrPng5JX2T54UnpOCUBHmIbPk6PAXYWPTHM/qfeKNTjY0zYpX/dv5l0ij5OAGg20CmHqXaQ==
+<<<<<<< Updated upstream
+=======
+  dependencies:
+    "@nx/devkit" "20.1.4"
+    "@nx/js" "20.1.4"
+    semver "^7.5.3"
+    tslib "^2.3.0"
+    typescript "~5.4.2"
+
+"@nx/eslint@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/eslint/-/eslint-20.3.2.tgz"
+  integrity sha512-vWvMmJ4aU/CjqomTVLuMlmhxKj/Q2wlhu9tQhZlDexDGfGF4QMidrbb25Rqog9NSeeI5hhBp57TQjfDyEF8HhQ==
+>>>>>>> Stashed changes
   dependencies:
     "@nx/devkit" "20.1.4"
     "@nx/js" "20.1.4"
@@ -2692,15 +2812,57 @@
     yargs-parser "21.1.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/js@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/js/-/js-20.4.0.tgz#698c4e99920dca1e11371724c02fe4a70770787e"
   integrity sha512-7ly4gdJlP+yLA2FSANv86qrdiQSf64zTLVZj7Xu9KrSsrHr3OCX1DfzzcLgUVisumRkLxqvUrz7pzspooWdS/Q==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/js@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/js/-/js-20.1.4.tgz"
   integrity sha512-o44prlNHyEEzhLOaIsEWdHm0I6SrEYkX5zjGAjlajoHuZ0o9JJBuE4uyIPZGo/EOZIy6idANfvpAbEtd6XAhJA==
+<<<<<<< Updated upstream
+=======
+  dependencies:
+    "@babel/core" "^7.23.2"
+    "@babel/plugin-proposal-decorators" "^7.22.7"
+    "@babel/plugin-transform-class-properties" "^7.22.5"
+    "@babel/plugin-transform-runtime" "^7.23.2"
+    "@babel/preset-env" "^7.23.2"
+    "@babel/preset-typescript" "^7.22.5"
+    "@babel/runtime" "^7.22.6"
+    "@nx/devkit" "20.1.4"
+    "@nx/workspace" "20.1.4"
+    "@zkochan/js-yaml" "0.0.7"
+    babel-plugin-const-enum "^1.0.1"
+    babel-plugin-macros "^2.8.0"
+    babel-plugin-transform-typescript-metadata "^0.3.1"
+    chalk "^4.1.0"
+    columnify "^1.6.0"
+    detect-port "^1.5.1"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    ignore "^5.0.4"
+    js-tokens "^4.0.0"
+    jsonc-parser "3.2.0"
+    minimatch "9.0.3"
+    npm-package-arg "11.0.1"
+    npm-run-path "^4.0.1"
+    ora "5.3.0"
+    semver "^7.5.3"
+    source-map-support "0.5.19"
+    ts-node "10.9.1"
+    tsconfig-paths "^4.1.2"
+    tslib "^2.3.0"
+
+"@nx/js@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/js/-/js-20.3.2.tgz"
+  integrity sha512-t2mLCogVc/DWpkJ1SW4pFgeyWAmuy7EI4IPyShtF4s9mhqyIDfd29fGYsocuv84skX6y4JMOw3O+c+LXdQ9QWw==
+>>>>>>> Stashed changes
   dependencies:
     "@babel/core" "^7.23.2"
     "@babel/plugin-proposal-decorators" "^7.22.7"
@@ -2796,6 +2958,7 @@
     webpack "5.88.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/next@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/next/-/next-20.4.0.tgz#739b52f156eaed12b7d400ab1e0ab14f7fed6fe8"
@@ -2813,12 +2976,21 @@
   version "20.1.4"
   dependencies:
     "@babel/plugin-proposal-decorators" "^7.22.7"
+=======
+"@nx/next@^20.1.4":
+  version "20.1.4"
+  dependencies:
+    "@babel/plugin-proposal-decorators" "^7.22.7"
+>>>>>>> Stashed changes
     "@nx/devkit" "20.1.4"
     "@nx/eslint" "20.1.4"
     "@nx/js" "20.1.4"
     "@nx/react" "20.1.4"
     "@nx/web" "20.1.4"
     "@nx/webpack" "20.1.4"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "@phenomnomnominal/tsquery" "~5.0.1"
     "@svgr/webpack" "^8.1.0"
@@ -2829,6 +3001,7 @@
     tslib "^2.3.0"
     webpack-merge "^5.8.0"
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 "@nx/nx-darwin-arm64@20.4.0":
   version "20.4.0"
@@ -2885,6 +3058,8 @@
   resolved "https://registry.yarnpkg.com/@nx/playwright/-/playwright-20.4.0.tgz#0188e91443d3e41230cfa409e696efb676bb3cb3"
   integrity sha512-fVk+mpb6nFoyTfVAM9qC/f7/nMBYwbgeIuRLlBOG2sbjxYFxV7QtEGoMh1dLz9ZlfZyIBFY9XN84eqQhdi5PFg==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/nx-win32-x64-msvc@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-20.1.4.tgz"
@@ -2911,15 +3086,40 @@
     tslib "^2.3.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/react@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/react/-/react-20.4.0.tgz#5486187531d7f1311853d4bb758486d1eb360cd2"
   integrity sha512-SD9GGY95Y2JMqbOZobu6d34VW0S9+/MoUNh/mPbT/2AxYHf8uSCdfbOsxFDhOPXdCkeeWWj/037BwI3qY0sSqA==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/react@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/react/-/react-20.1.4.tgz"
   integrity sha512-7LKFEC3Z02Panjtmz9NSH5keuUEwdczAp2Cn8zrN4WYuolqRiJ5B4ynBQpdLQ3WER351S0zdnfJLlD+bsTWc5Q==
+<<<<<<< Updated upstream
+=======
+  dependencies:
+    "@module-federation/enhanced" "0.7.6"
+    "@nx/devkit" "20.1.4"
+    "@nx/eslint" "20.1.4"
+    "@nx/js" "20.1.4"
+    "@nx/web" "20.1.4"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    "@svgr/webpack" "^8.0.1"
+    express "^4.19.2"
+    file-loader "^6.2.0"
+    http-proxy-middleware "^3.0.3"
+    minimatch "9.0.3"
+    picocolors "^1.1.0"
+    tslib "^2.3.0"
+
+"@nx/react@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/react/-/react-20.3.2.tgz"
+  integrity sha512-LqQIDjX23SpVzO77aHgTFq8NgxSnWYi/fbj8kk79n0yb+pnWgvkJcOfxNXe+LmtaSwX/Ux1lC+lBLQ/1Y0mDmw==
+>>>>>>> Stashed changes
   dependencies:
     "@module-federation/enhanced" "0.7.6"
     "@nx/devkit" "20.1.4"
@@ -2977,15 +3177,20 @@
     tsconfig-paths "^4.1.2"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/web@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/web/-/web-20.4.0.tgz#4b37f78f31c391fb38894edab115996b8cf7122f"
   integrity sha512-hoo01G7e1BYHAPbwlaFoZXD0x6l+e3k+hmz41J1590mZ5tueU2sZdIfzhFEHmfJga8UcAGNmHPTjejlvEhH08w==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/web@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/web/-/web-20.1.4.tgz"
   integrity sha512-634VPtpv1zIz3IWbqDauzJzUvPy7u6uenhOYoK6SA++qISK+gfp3LVQ6IH6eymNcFKX95urmiNFR9YG3qRaluA==
+<<<<<<< Updated upstream
+=======
   dependencies:
     "@nx/devkit" "20.1.4"
     "@nx/js" "20.1.4"
@@ -2994,6 +3199,20 @@
     picocolors "^1.1.0"
     tslib "^2.3.0"
 
+"@nx/web@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/web/-/web-20.3.2.tgz"
+  integrity sha512-Kw8is78c3zo4M2bPCVgF2XJev3oCPyl9wyTuexzc5y3praF/r0Dc1jlGiHqwdeGBKpNNDaZns4WZe5KUaIc/Qg==
+>>>>>>> Stashed changes
+  dependencies:
+    "@nx/devkit" "20.1.4"
+    "@nx/js" "20.1.4"
+    detect-port "^1.5.1"
+    http-server "^14.1.0"
+    picocolors "^1.1.0"
+    tslib "^2.3.0"
+
+<<<<<<< Updated upstream
 "@nx/web@20.3.2":
   version "20.3.2"
   resolved "https://registry.npmjs.org/@nx/web/-/web-20.3.2.tgz"
@@ -3015,6 +3234,57 @@
 =======
 "@nx/webpack@20.1.4":
   version "20.1.4"
+=======
+"@nx/webpack@20.1.4":
+  version "20.1.4"
+  dependencies:
+    "@babel/core" "^7.23.2"
+    "@module-federation/enhanced" "^0.7.6"
+    "@module-federation/sdk" "^0.7.6"
+    "@nx/devkit" "20.1.4"
+    "@nx/js" "20.1.4"
+    "@phenomnomnominal/tsquery" "~5.0.1"
+    ajv "^8.12.0"
+    autoprefixer "^10.4.9"
+    babel-loader "^9.1.2"
+    browserslist "^4.21.4"
+    copy-webpack-plugin "^10.2.4"
+    css-loader "^6.4.0"
+    css-minimizer-webpack-plugin "^5.0.0"
+    express "^4.19.2"
+    fork-ts-checker-webpack-plugin "7.2.13"
+    http-proxy-middleware "^3.0.3"
+    less "4.1.3"
+    less-loader "11.1.0"
+    license-webpack-plugin "^4.0.2"
+    loader-utils "^2.0.3"
+    mini-css-extract-plugin "~2.4.7"
+    parse5 "4.0.0"
+    picocolors "^1.1.0"
+    postcss "^8.4.38"
+    postcss-import "~14.1.0"
+    postcss-loader "^6.1.1"
+    rxjs "^7.8.0"
+    sass "^1.42.1"
+    sass-loader "^12.2.0"
+    source-map-loader "^5.0.0"
+    style-loader "^3.3.0"
+    stylus "^0.64.0"
+    stylus-loader "^7.1.0"
+    terser-webpack-plugin "^5.3.3"
+    ts-loader "^9.3.1"
+    tsconfig-paths-webpack-plugin "4.0.0"
+    tslib "^2.3.0"
+    webpack "^5.80.0"
+    webpack-dev-server "^5.0.4"
+    webpack-node-externals "^3.0.0"
+    webpack-subresource-integrity "^5.1.0"
+
+"@nx/webpack@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/webpack/-/webpack-20.3.2.tgz"
+  integrity sha512-/3N4cRCbwHSZsJDHukV0QrIBZxFJpGjZFEPLswkAn8B+9AQVkp8ZieZYgu08XixXVj/9oTK4sbOh143/eu+93g==
+>>>>>>> Stashed changes
   dependencies:
     "@babel/core" "^7.23.2"
     "@module-federation/enhanced" "^0.7.6"
@@ -3103,15 +3373,20 @@
     webpack-subresource-integrity "^5.1.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@nx/workspace@20.4.0":
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/@nx/workspace/-/workspace-20.4.0.tgz#a42d2ca3ae7d91f2af0e99d6fde681e73bf04561"
   integrity sha512-UFSCl2ZXGW96er+VC8xpytzxmZ4mBHASIeQwk1RpIgB3h/Iif2T7OnnIFFg32Ag667TfXZhAPZ4P0pBNGdBeSA==
 =======
+=======
+>>>>>>> Stashed changes
 "@nx/workspace@20.1.4":
   version "20.1.4"
   resolved "https://registry.npmjs.org/@nx/workspace/-/workspace-20.1.4.tgz"
   integrity sha512-rEceXQqcNdlD5EvUA2w3MLi7mZPH13OvpvDPPyBNBurBrRcSaylDSvUCL54jWJ2G7bLzJx9bqWy81W8g7KNS5Q==
+<<<<<<< Updated upstream
+=======
   dependencies:
     "@nx/devkit" "20.1.4"
     chalk "^4.1.0"
@@ -3120,6 +3395,20 @@
     tslib "^2.3.0"
     yargs-parser "21.1.1"
 
+"@nx/workspace@20.3.2":
+  version "20.3.2"
+  resolved "https://registry.npmjs.org/@nx/workspace/-/workspace-20.3.2.tgz"
+  integrity sha512-Dj2AbG9X8Uo6k3XhcuNOblDgR/U8u5+x41hMNKHSG9Pi3CyAJ24didtn1SMf78GElzPOV94KJZmioGHw3rKyCg==
+>>>>>>> Stashed changes
+  dependencies:
+    "@nx/devkit" "20.1.4"
+    chalk "^4.1.0"
+    enquirer "~2.3.6"
+    nx "20.1.4"
+    tslib "^2.3.0"
+    yargs-parser "21.1.1"
+
+<<<<<<< Updated upstream
 "@nx/workspace@20.3.2":
   version "20.3.2"
   resolved "https://registry.npmjs.org/@nx/workspace/-/workspace-20.3.2.tgz"
@@ -3204,6 +3493,8 @@
   resolved "https://registry.yarnpkg.com/@parcel/watcher/-/watcher-2.5.1.tgz#342507a9cfaaf172479a882309def1e991fb1200"
   integrity sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==
 =======
+=======
+>>>>>>> Stashed changes
 "@parcel/watcher-win32-x64@2.5.0":
   version "2.5.0"
   resolved "https://registry.npmjs.org/@parcel/watcher-win32-x64/-/watcher-win32-x64-2.5.0.tgz"
@@ -3247,12 +3538,19 @@
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@playwright/test@^1.36.0":
   version "1.50.1"
   resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.50.1.tgz#027d00ca77ec79688764eb765cfe9a688807bf0b"
   integrity sha512-Jii3aBg+CEDpgnuDxEp/h7BimHcUTDlpEtce89xEumlJ5ef2hqepZ+PWp1DDpYC/VO9fmWVI1IlEaoI5fK9FXQ==
   dependencies:
     playwright "1.50.1"
+=======
+"@playwright/test@^1.36.0", "@playwright/test@^1.41.2":
+  version "1.49.0"
+  dependencies:
+    playwright "1.49.0"
+>>>>>>> Stashed changes
 =======
 "@playwright/test@^1.36.0", "@playwright/test@^1.41.2":
   version "1.49.0"
@@ -3284,6 +3582,7 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 "@rollup/rollup-android-arm-eabi@4.34.1":
   version "4.34.1"
@@ -3441,6 +3740,19 @@
   version "1.2.2"
   resolved "https://registry.npmjs.org/@rspack/binding/-/binding-1.2.2.tgz"
 >>>>>>> Stashed changes
+=======
+"@rollup/rollup-win32-x64-msvc@4.28.0":
+  version "4.28.0"
+
+"@rspack/binding-win32-x64-msvc@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@rspack/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.2.tgz"
+  integrity sha512-eeAvaN831KG553cMSHkVldyk6YQn4ujgRHov6r1wtREq7CD3/ka9LMkJUepCN85K7XtwYT0N4KpFIQyf5GTGoA==
+
+"@rspack/binding@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@rspack/binding/-/binding-1.2.2.tgz"
+>>>>>>> Stashed changes
   integrity sha512-GCZwpGFYlLTdJ2soPLwjw9z4LSZ+GdpbHNfBt3Cm/f/bAF8n6mZc7dHUqN893RFh7MPU17HNEL3fMw7XR+6pHg==
   optionalDependencies:
     "@rspack/binding-darwin-arm64" "1.2.2"
@@ -3454,9 +3766,15 @@
     "@rspack/binding-win32-x64-msvc" "1.2.2"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@rspack/core@^1.1.5":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@rspack/core/-/core-1.2.2.tgz#c91b7d36aa080ca99459826ad2db0e665215da2c"
+=======
+"@rspack/core@^1.1.5", "@rspack/core@>=0.7", "@rspack/core@0.x || 1.x":
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/@rspack/core/-/core-1.2.2.tgz"
+>>>>>>> Stashed changes
 =======
 "@rspack/core@^1.1.5", "@rspack/core@>=0.7", "@rspack/core@0.x || 1.x":
   version "1.2.2"
@@ -3480,10 +3798,15 @@
   integrity sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@rushstack/eslint-patch@^1.10.3":
   version "1.10.5"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.10.5.tgz#3a1c12c959010a55c17d46b395ed3047b545c246"
   integrity sha512-kkKUDVlII2DQiKy7UstOR1ErJP8kUKAQ4oa+SQtM0K+lPdmmjj0YnnxBgtTVYH7mUKtbsxeFC9y0AmK7Yb78/A==
+=======
+"@rushstack/eslint-patch@^1.3.3":
+  version "1.10.4"
+>>>>>>> Stashed changes
 
 "@rushstack/node-core-library@5.11.0":
   version "5.11.0"
@@ -3724,6 +4047,7 @@
     source-map "^0.7.3"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@swc/core-darwin-arm64@1.10.14":
   version "1.10.14"
   resolved "https://registry.yarnpkg.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.10.14.tgz#707857281d202614e4b0b37590c9345da7056c23"
@@ -3822,12 +4146,17 @@
 "@swc/core-win32-x64-msvc@1.10.1":
   version "1.10.1"
 >>>>>>> Stashed changes
+=======
+"@swc/core-win32-x64-msvc@1.10.1":
+  version "1.10.1"
+>>>>>>> Stashed changes
 
 "@swc/core-win32-x64-msvc@1.5.29":
   version "1.5.29"
   resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.5.29.tgz"
   integrity sha512-eD/gnxqKyZQQR0hR7TMkIlJ+nCF9dzYmVVNbYZWuA1Xy94aBPUsEk3Uw3oG7q6R3ErrEUPP0FNf2ztEnv+I+dw==
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 "@swc/core@^1.7.26":
   version "1.10.14"
@@ -3849,6 +4178,9 @@
     "@swc/core-win32-x64-msvc" "1.10.14"
 
 "@swc/core@~1.5.7":
+=======
+"@swc/core@^1.2.66", "@swc/core@^1.3.85", "@swc/core@>= 1.4.13", "@swc/core@>=1.2.50", "@swc/core@~1.5.7":
+>>>>>>> Stashed changes
 =======
 "@swc/core@^1.2.66", "@swc/core@^1.3.85", "@swc/core@>= 1.4.13", "@swc/core@>=1.2.50", "@swc/core@~1.5.7":
 >>>>>>> Stashed changes
@@ -4100,9 +4432,13 @@
 
 "@types/express-serve-static-core@*", "@types/express-serve-static-core@^5.0.0":
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   version "5.0.6"
   resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-5.0.6.tgz#41fec4ea20e9c7b22f024ab88a95c6bb288f51b8"
   integrity sha512-3xhRnjJPkULekpSzgtoNYYcTWgEZkp4myc+Saevii5JPnHNvHMRlBSHDbs7Bh1iPPoVTERHEZXyhyLbMEsExsA==
+=======
+  version "5.0.2"
+>>>>>>> Stashed changes
 =======
   version "5.0.2"
 >>>>>>> Stashed changes
@@ -4251,6 +4587,7 @@
     "@types/node" "*"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@types/node@*":
   version "22.13.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.1.tgz#a2a3fefbdeb7ba6b89f40371842162fac0934f33"
@@ -4259,6 +4596,9 @@
     undici-types "~6.20.0"
 
 "@types/node@18.16.9":
+=======
+"@types/node@*", "@types/node@^18.0.0 || >=20.0.0", "@types/node@18.16.9":
+>>>>>>> Stashed changes
 =======
 "@types/node@*", "@types/node@^18.0.0 || >=20.0.0", "@types/node@18.16.9":
 >>>>>>> Stashed changes
@@ -4297,7 +4637,10 @@
     "@types/react" "*"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 "@types/react-loadable@*":
   version "5.5.11"
   dependencies:
@@ -4311,6 +4654,7 @@
   integrity sha512-8TV6R3h2j7a91c+1DXdJi3Syo69zzIZbz7Lg5tORM5LEJG7X/E6a1V3drRyBRZq7/utz7A+c4OgYLiLcYGHG6w==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@types/react@*":
   version "19.0.8"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.8.tgz#7098e6159f2a61e4f4cef2c1223c044a9bec590e"
@@ -4319,6 +4663,9 @@
     csstype "^3.0.2"
 
 "@types/react@18.3.1":
+=======
+"@types/react@*", "@types/react@^17.0.0 || ^18.0.0 || ^19.0.0", "@types/react@^18.0.0", "@types/react@18.3.1":
+>>>>>>> Stashed changes
 =======
 "@types/react@*", "@types/react@^17.0.0 || ^18.0.0 || ^19.0.0", "@types/react@^18.0.0", "@types/react@18.3.1":
 >>>>>>> Stashed changes
@@ -4434,6 +4781,7 @@
     "@types/yargs-parser" "*"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 "@typescript-eslint/eslint-plugin@8.23.0", "@typescript-eslint/eslint-plugin@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
   version "8.23.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.23.0.tgz#7745f4e3e4a7ae5f6f73fefcd856fd6a074189b7"
@@ -4536,11 +4884,58 @@
     "@typescript-eslint/types" "8.16.0"
     "@typescript-eslint/visitor-keys" "8.16.0"
 >>>>>>> Stashed changes
+=======
+"@typescript-eslint/eslint-plugin@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/eslint-plugin@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@eslint-community/regexpp" "^4.10.0"
+    "@typescript-eslint/scope-manager" "8.16.0"
+    "@typescript-eslint/type-utils" "8.16.0"
+    "@typescript-eslint/utils" "8.16.0"
+    "@typescript-eslint/visitor-keys" "8.16.0"
+    graphemer "^1.4.0"
+    ignore "^5.3.1"
+    natural-compare "^1.4.0"
+    ts-api-utils "^1.3.0"
+
+"@typescript-eslint/parser@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0", "@typescript-eslint/parser@^6.13.2 || ^7.0.0 || ^8.0.0", "@typescript-eslint/parser@^8.0.0", "@typescript-eslint/parser@^8.0.0 || ^8.0.0-alpha.0", "@typescript-eslint/parser@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@typescript-eslint/scope-manager" "8.16.0"
+    "@typescript-eslint/types" "8.16.0"
+    "@typescript-eslint/typescript-estree" "8.16.0"
+    "@typescript-eslint/visitor-keys" "8.16.0"
+    debug "^4.3.4"
+
+"@typescript-eslint/scope-manager@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@typescript-eslint/types" "8.16.0"
+    "@typescript-eslint/visitor-keys" "8.16.0"
+
+"@typescript-eslint/type-utils@^8.0.0", "@typescript-eslint/type-utils@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@typescript-eslint/typescript-estree" "8.16.0"
+    "@typescript-eslint/utils" "8.16.0"
+    debug "^4.3.4"
+    ts-api-utils "^1.3.0"
+
+"@typescript-eslint/types@8.16.0":
+  version "8.16.0"
+
+"@typescript-eslint/typescript-estree@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@typescript-eslint/types" "8.16.0"
+    "@typescript-eslint/visitor-keys" "8.16.0"
+>>>>>>> Stashed changes
     debug "^4.3.4"
     fast-glob "^3.3.2"
     is-glob "^4.0.3"
     minimatch "^9.0.4"
     semver "^7.6.0"
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     ts-api-utils "^2.0.1"
 
@@ -4576,6 +4971,21 @@
 "@typescript-eslint/visitor-keys@8.16.0":
   version "8.16.0"
   dependencies:
+=======
+    ts-api-utils "^1.3.0"
+
+"@typescript-eslint/utils@^8.0.0", "@typescript-eslint/utils@8.16.0":
+  version "8.16.0"
+  dependencies:
+    "@eslint-community/eslint-utils" "^4.4.0"
+    "@typescript-eslint/scope-manager" "8.16.0"
+    "@typescript-eslint/types" "8.16.0"
+    "@typescript-eslint/typescript-estree" "8.16.0"
+
+"@typescript-eslint/visitor-keys@8.16.0":
+  version "8.16.0"
+  dependencies:
+>>>>>>> Stashed changes
     "@typescript-eslint/types" "8.16.0"
     eslint-visitor-keys "^4.2.0"
 
@@ -5265,6 +5675,7 @@ aria-query@5.3.0:
     dequal "^2.0.3"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 aria-query@^5.0.0, aria-query@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-5.3.2.tgz#93f81a43480e33a338f19163a3d10a50c01dcd59"
@@ -5274,6 +5685,10 @@ array-buffer-byte-length@^1.0.1, array-buffer-byte-length@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-buffer-byte-length/-/array-buffer-byte-length-1.0.2.tgz#384d12a37295aec3769ab022ad323a18a51ccf8b"
   integrity sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==
+=======
+array-buffer-byte-length@^1.0.1:
+  version "1.0.1"
+>>>>>>> Stashed changes
 =======
 array-buffer-byte-length@^1.0.1:
   version "1.0.1"
@@ -5836,6 +6251,7 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001426, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001616, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001688:
   version "1.0.30001696"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001696.tgz#00c30a2fc11e3c98c25e5125418752af3ae2f49f"
@@ -5846,6 +6262,8 @@ chalk@3.0.0, chalk@^3.0.0:
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
 =======
+=======
+>>>>>>> Stashed changes
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001426, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001616, caniuse-lite@^1.0.30001646, caniuse-lite@^1.0.30001669:
   version "1.0.30001684"
 
@@ -5866,6 +6284,9 @@ chalk@^4.0.0, chalk@^4.0.2, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   dependencies:
     ansi-styles "^4.1.0"
@@ -5895,6 +6316,9 @@ check-error@^1.0.3:
     get-func-name "^2.0.2"
 
 chokidar@^3.5.3:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   version "3.6.0"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz"
@@ -6332,6 +6756,7 @@ css-what@^6.1.0:
   integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 css.escape@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
@@ -6347,6 +6772,8 @@ css@2.2.4:
     source-map-resolve "^0.5.2"
     urix "^0.1.0"
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 cssesc@^3.0.0:
@@ -6506,6 +6933,7 @@ debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2, debug@^4.3.4, debug@^4.3
   integrity sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==
   dependencies:
     ms "^2.1.3"
+<<<<<<< Updated upstream
 
 debug@2.6.9:
   version "2.6.9"
@@ -6525,6 +6953,21 @@ decimal.js@^10.4.2, decimal.js@^10.4.3:
   integrity sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==
 >>>>>>> Stashed changes
 
+=======
+
+debug@2.6.9:
+  version "2.6.9"
+  resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
+  integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+  dependencies:
+    ms "2.0.0"
+
+decimal.js@^10.4.2, decimal.js@^10.4.3:
+  version "10.4.3"
+  resolved "https://registry.npmjs.org/decimal.js/-/decimal.js-10.4.3.tgz"
+  integrity sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==
+
+>>>>>>> Stashed changes
 decompress-response@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npmjs.org/decompress-response/-/decompress-response-6.0.0.tgz"
@@ -6813,10 +7256,15 @@ ejs@^3.1.10, ejs@^3.1.7:
     jake "^10.8.5"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 electron-to-chromium@^1.5.73:
   version "1.5.91"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.91.tgz#cf5567f6853062493242133aefd4dc8dc8440abd"
   integrity sha512-sNSHHyq048PFmZY4S90ax61q+gLCs0X0YmcOII9wG9S2XwbVr+h4VW2wWhnbp/Eys3cCwTxVF292W3qPaxIapQ==
+=======
+electron-to-chromium@^1.5.41:
+  version "1.5.67"
+>>>>>>> Stashed changes
 =======
 electron-to-chromium@^1.5.41:
   version "1.5.67"
@@ -7086,6 +7534,7 @@ escodegen@^2.0.0:
     source-map "~0.6.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 eslint-config-next@^15.1.6:
   version "15.1.6"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-15.1.6.tgz#c056b7325dc70a247895c7c85515ebaae2bab35d"
@@ -7097,6 +7546,11 @@ eslint-config-next@^15.1.6:
 eslint-config-next@^14.2.16:
   version "14.2.16"
   dependencies:
+=======
+eslint-config-next@^14.2.16:
+  version "14.2.16"
+  dependencies:
+>>>>>>> Stashed changes
     "@next/eslint-plugin-next" "14.2.16"
     "@rushstack/eslint-patch" "^1.3.3"
 >>>>>>> Stashed changes
@@ -7143,7 +7597,11 @@ eslint-module-utils@^2.12.0, eslint-module-utils@^2.8.1:
     debug "^3.2.7"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 eslint-plugin-import@2.31.0, eslint-plugin-import@^2.31.0:
+=======
+eslint-plugin-import@*, eslint-plugin-import@^2.28.1, eslint-plugin-import@2.31.0:
+>>>>>>> Stashed changes
 =======
 eslint-plugin-import@*, eslint-plugin-import@^2.28.1, eslint-plugin-import@2.31.0:
 >>>>>>> Stashed changes
@@ -7215,6 +7673,7 @@ eslint-plugin-jsx-a11y@6.10.1:
     string.prototype.includes "^2.0.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 eslint-plugin-jsx-a11y@^6.10.0:
   version "6.10.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.10.2.tgz#d2812bb23bf1ab4665f1718ea442e8372e638483"
@@ -7243,6 +7702,8 @@ eslint-plugin-next@^0.0.0:
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 eslint-plugin-playwright@^1.6.2:
   version "1.8.3"
   resolved "https://registry.npmjs.org/eslint-plugin-playwright/-/eslint-plugin-playwright-1.8.3.tgz"
@@ -7250,6 +7711,7 @@ eslint-plugin-playwright@^1.6.2:
   dependencies:
     globals "^13.23.0"
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 eslint-plugin-react-hooks@5.0.0:
   version "5.0.0"
@@ -7261,11 +7723,40 @@ eslint-plugin-react-hooks@^5.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.1.0.tgz#3d34e37d5770866c34b87d5b499f5f0b53bf0854"
   integrity sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==
 =======
+=======
+>>>>>>> Stashed changes
 "eslint-plugin-react-hooks@^4.5.0 || 5.0.0-canary-7118f5dd7-20230705":
   version "5.0.0-canary-7118f5dd7-20230705"
   resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0-canary-7118f5dd7-20230705.tgz"
   integrity sha512-AZYbMo/NW9chdL7vk6HQzQhT+PvTAEVqWk9ziruUoW2kAOcN5qNyelv70e0F1VNQAbvutOC9oc+xfWycI9FxDw==
 >>>>>>> Stashed changes
+
+eslint-plugin-react-hooks@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.0.0.tgz"
+  integrity sha512-hIOwI+5hYGpJEc4uPRmz2ulCjAGD/N13Lukkh8cLV0i2IRk/bdZDYjgLVHj+U9Z704kLIdIO6iueGvxNur0sgw==
+
+eslint-plugin-react@^7.33.2:
+  version "7.37.2"
+  dependencies:
+    array-includes "^3.1.8"
+    array.prototype.findlast "^1.2.5"
+    array.prototype.flatmap "^1.3.2"
+    array.prototype.tosorted "^1.1.4"
+    doctrine "^2.1.0"
+    es-iterator-helpers "^1.1.0"
+    estraverse "^5.3.0"
+    hasown "^2.0.2"
+    jsx-ast-utils "^2.4.1 || ^3.0.0"
+    minimatch "^3.1.2"
+    object.entries "^1.1.8"
+    object.fromentries "^2.0.8"
+    object.values "^1.2.0"
+    prop-types "^15.8.1"
+    resolve "^2.0.0-next.5"
+    semver "^6.3.1"
+    string.prototype.matchall "^4.0.11"
+    string.prototype.repeat "^1.0.0"
 
 eslint-plugin-react-hooks@5.0.0:
   version "5.0.0"
@@ -7319,6 +7810,7 @@ eslint-plugin-react@7.35.0:
     string.prototype.repeat "^1.0.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 eslint-plugin-react@^7.37.0:
   version "7.37.4"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.37.4.tgz#1b6c80b6175b6ae4b26055ae4d55d04c414c7181"
@@ -7356,6 +7848,8 @@ eslint-scope@^8.2.0:
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-8.2.0.tgz#377aa6f1cb5dc7592cfd0b7f892fd0cf352ce442"
   integrity sha512-PHlWUfG6lvPc3yvP5A4PNyBL1W8fkDUccmI21JUu/+GKZBoH/W5u6usENXUrWFRsyoW5ACUjFGgAFQp5gUlb/A==
 =======
+=======
+>>>>>>> Stashed changes
 eslint-scope@^7.2.2:
   version "7.2.2"
   resolved "https://registry.npmjs.org/eslint-scope/-/eslint-scope-7.2.2.tgz"
@@ -7384,11 +7878,14 @@ eslint-visitor-keys@^4.2.0:
   integrity sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 eslint@^9.19.0:
   version "9.19.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.19.0.tgz#ffa1d265fc4205e0f8464330d35f09e1d548b1bf"
   integrity sha512-ug92j0LepKlbbEv6hD911THhoRHmbdXt2gX+VDABAW/Ir7D3nqKdv5Pf5vtlyY6HQMTEP2skXY43ueqTCWssEA==
 =======
+=======
+>>>>>>> Stashed changes
 eslint@*, "eslint@^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9", "eslint@^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0", "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0", "eslint@^6.0.0 || ^7.0.0 || >=8.0.0", "eslint@^7.23.0 || ^8.0.0", "eslint@^8.0.0 || ^9.0.0", eslint@^8.57.0, "eslint@^8.57.0 || ^9.0.0", eslint@^9.10.0, eslint@>=7.0.0, eslint@>=8.40.0:
   version "8.57.1"
   resolved "https://registry.npmjs.org/eslint/-/eslint-8.57.1.tgz"
@@ -7566,10 +8063,15 @@ expect@^29.0.0, expect@^29.7.0:
     jest-util "^29.7.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 express@^4.21.2:
   version "4.21.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.21.2.tgz#cf250e48362174ead6cea4a566abef0162c1ec32"
   integrity sha512-28HqgMZAmih1Czt9ny7qr6ek2qddF4FclbMzwhCREB6OFfH+rXAnuNCwo1/wFvrtbgsQDb4kSbX9de9lFbrXnA==
+=======
+express@^4.19.2:
+  version "4.21.1"
+>>>>>>> Stashed changes
 =======
 express@^4.19.2:
   version "4.21.1"
@@ -7632,10 +8134,15 @@ fast-fifo@^1.2.0, fast-fifo@^1.3.2:
   resolved "https://registry.npmjs.org/fast-fifo/-/fast-fifo-1.3.2.tgz"
   integrity sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==
 
+<<<<<<< Updated upstream
 fast-glob@3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.3.1.tgz#784b4e897340f3dbbef17413b3f11acf03c874c4"
   integrity sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==
+=======
+fast-glob@^3.2.12, fast-glob@^3.2.5, fast-glob@^3.2.7, fast-glob@^3.3.0, fast-glob@^3.3.2:
+  version "3.3.2"
+>>>>>>> Stashed changes
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -7643,6 +8150,7 @@ fast-glob@3.3.1:
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
+<<<<<<< Updated upstream
 fast-glob@^3.2.12, fast-glob@^3.2.5, fast-glob@^3.2.7, fast-glob@^3.3.0, fast-glob@^3.3.2:
   version "3.3.2"
   dependencies:
@@ -7652,6 +8160,8 @@ fast-glob@^3.2.12, fast-glob@^3.2.5, fast-glob@^3.2.7, fast-glob@^3.3.0, fast-gl
     merge2 "^1.3.0"
     micromatch "^4.0.4"
 
+=======
+>>>>>>> Stashed changes
 fast-glob@3.2.7:
   version "3.2.7"
   resolved "https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.7.tgz"
@@ -7678,9 +8188,13 @@ fast-uri@^3.0.1:
 
 fastq@^1.6.0:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.19.0.tgz#a82c6b7c2bb4e44766d865f07997785fecfdcb89"
   integrity sha512-7SFSRCNjBQIZH/xZR3iy5iQYR8aGBE0h3VG6/cwlbrpdciNYBMotQav8c1XI3HjHH+NikUpP53nPdlZSdWmFzA==
+=======
+  version "1.17.1"
+>>>>>>> Stashed changes
 =======
   version "1.17.1"
 >>>>>>> Stashed changes
@@ -8001,6 +8515,16 @@ fs-extra@9.1.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
+fs-extra@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-9.1.0.tgz"
+  integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
+  dependencies:
+    at-least-node "^1.0.0"
+    graceful-fs "^4.2.0"
+    jsonfile "^6.0.1"
+    universalify "^2.0.0"
+
 fs-monkey@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npmjs.org/fs-monkey/-/fs-monkey-1.0.6.tgz"
@@ -8118,8 +8642,11 @@ glob-to-regexp@^0.4.1:
   integrity sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 glob@^10.3.10, glob@^10.4.5:
 =======
+=======
+>>>>>>> Stashed changes
 glob@^10.3.10:
   version "10.4.5"
   resolved "https://registry.npmjs.org/glob/-/glob-10.4.5.tgz"
@@ -8133,6 +8660,9 @@ glob@^10.3.10:
     path-scurry "^1.11.1"
 
 glob@^10.4.5:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   version "10.4.5"
   resolved "https://registry.npmjs.org/glob/-/glob-10.4.5.tgz"
@@ -8194,12 +8724,25 @@ globals@^11.1.0:
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 globals@^13.23.0:
 =======
 globals@^13.19.0:
 >>>>>>> Stashed changes
   version "13.24.0"
   resolved "https://registry.npmjs.org/globals/-/globals-13.24.0.tgz"
+=======
+globals@^13.19.0:
+  version "13.24.0"
+  resolved "https://registry.npmjs.org/globals/-/globals-13.24.0.tgz"
+  integrity sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==
+  dependencies:
+    type-fest "^0.20.2"
+
+globals@^13.23.0:
+  version "13.24.0"
+  resolved "https://registry.npmjs.org/globals/-/globals-13.24.0.tgz"
+>>>>>>> Stashed changes
   integrity sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==
   dependencies:
     type-fest "^0.20.2"
@@ -8669,6 +9212,7 @@ is-arrayish@^0.2.1:
 
 is-async-function@^2.0.0:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/is-async-function/-/is-async-function-2.1.1.tgz#3e69018c8e04e73b738793d020bfe884b9fd3523"
   integrity sha512-9dgM/cZBnNvjzaMYHVoxxfPj2QXt22Ev7SuuPrs+xav0ukGB0S6d4ydZdEiM48kLx5kDV+QBPrpVnFyefL8kkQ==
@@ -8687,6 +9231,15 @@ is-async-function@^2.0.0:
 is-bigint@^1.0.1:
   version "1.0.4"
   dependencies:
+=======
+  version "2.0.0"
+  dependencies:
+    has-tostringtag "^1.0.0"
+
+is-bigint@^1.0.1:
+  version "1.0.4"
+  dependencies:
+>>>>>>> Stashed changes
     has-bigints "^1.0.1"
 
 is-binary-path@~2.1.0:
@@ -8815,6 +9368,9 @@ is-path-inside@^3.0.3:
   integrity sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==
 
 is-plain-obj@^1.0.0:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   version "1.1.0"
   resolved "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz"
@@ -8909,6 +9465,7 @@ is-weakmap@^2.0.2:
   integrity sha512-K5pXYOm9wqY1RgjpL3YTkF39tni1XajUIkawTLUo9EZEVUFga5gSQJF8nNS7ZwJQ02y+1YCNYcMh+HIf1ZqE+w==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 is-weakref@^1.0.2, is-weakref@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/is-weakref/-/is-weakref-1.1.1.tgz#eea430182be8d64174bd96bffbc46f21bf3f9293"
@@ -8925,6 +9482,16 @@ is-weakref@^1.0.2:
 is-weakset@^2.0.3:
   version "2.0.3"
   dependencies:
+=======
+is-weakref@^1.0.2:
+  version "1.0.2"
+  dependencies:
+    call-bind "^1.0.2"
+
+is-weakset@^2.0.3:
+  version "2.0.3"
+  dependencies:
+>>>>>>> Stashed changes
     call-bind "^1.0.7"
     get-intrinsic "^1.2.4"
 
@@ -9877,7 +10444,11 @@ lodash.uniq@^4.5.0:
   integrity sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 lodash@^4.17.14, lodash@^4.17.21, lodash@^4.17.4, lodash@~4.17.15:
+=======
+lodash@^4.17.14, lodash@~4.17.15:
+>>>>>>> Stashed changes
 =======
 lodash@^4.17.14, lodash@~4.17.15:
 >>>>>>> Stashed changes
@@ -10140,6 +10711,7 @@ minimalistic-assert@^1.0.0:
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 minimatch@9.0.3:
   version "9.0.3"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.3.tgz#a6e00c3de44c3a542bfaae70abfc22420a6da825"
@@ -10149,6 +10721,8 @@ minimatch@9.0.3:
 
 minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
 =======
+=======
+>>>>>>> Stashed changes
 minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
 >>>>>>> Stashed changes
   version "3.1.2"
@@ -10165,7 +10739,11 @@ minimatch@^5.0.1:
     brace-expansion "^2.0.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 minimatch@^9.0.3, minimatch@^9.0.4:
+=======
+minimatch@^9.0.1:
+>>>>>>> Stashed changes
 =======
 minimatch@^9.0.1:
 >>>>>>> Stashed changes
@@ -10299,6 +10877,7 @@ neo-async@^2.6.2:
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 next-router-mock@^0.9.13:
   version "0.9.13"
   resolved "https://registry.yarnpkg.com/next-router-mock/-/next-router-mock-0.9.13.tgz#bdee2011ea6c09e490121c354ef917f339767f72"
@@ -10325,6 +10904,9 @@ next-server@*:
     url "0.11.0"
 
 next@^14.2.23:
+=======
+next@^14.2.23, next@>=14.0.0:
+>>>>>>> Stashed changes
 =======
 next@^14.2.23, next@>=14.0.0:
 >>>>>>> Stashed changes
@@ -10457,11 +11039,14 @@ nwsapi@^2.2.2, nwsapi@^2.2.4:
   integrity sha512-F1I/bimDpj3ncaNDhfyMWuFqmQDBwDB0Fogc2qpL3BWvkQteFD/8BzWuIRl83rq0DXfm8SGt/HFhLXZyljTXcQ==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 nx@20.4.0:
   version "20.4.0"
   resolved "https://registry.yarnpkg.com/nx/-/nx-20.4.0.tgz#eb2f41f147859ff4828792ce0657a56803d5ba70"
   integrity sha512-barpwhq8noc30U0d5j2bSp9x/HDL33TCYsP2fl6FvpssbL64PwLOSBqIdZ9ATxVxAE/xAc/s+z72cYDkaYouPA==
 =======
+=======
+>>>>>>> Stashed changes
 "nx@>= 19 <= 21", nx@20.3.2:
   version "20.3.2"
   resolved "https://registry.npmjs.org/nx/-/nx-20.3.2.tgz"
@@ -10513,6 +11098,55 @@ nx@20.4.0:
     "@nx/nx-linux-x64-musl" "20.4.0"
     "@nx/nx-win32-arm64-msvc" "20.4.0"
     "@nx/nx-win32-x64-msvc" "20.4.0"
+
+nx@20.1.4:
+  version "20.1.4"
+  resolved "https://registry.npmjs.org/nx/-/nx-20.1.4.tgz"
+  integrity sha512-hyvGYxTzBkPxSXAB2tuqdv9TpVde5xOdGalsIdhF7j7PI3nwPpqtc3y28YTgRgpxtOE1Y6BfDNkXMO1SW0xu2w==
+  dependencies:
+    "@napi-rs/wasm-runtime" "0.2.4"
+    "@yarnpkg/lockfile" "^1.1.0"
+    "@yarnpkg/parsers" "3.0.2"
+    "@zkochan/js-yaml" "0.0.7"
+    axios "^1.7.4"
+    chalk "^4.1.0"
+    cli-cursor "3.1.0"
+    cli-spinners "2.6.1"
+    cliui "^8.0.1"
+    dotenv "~16.4.5"
+    dotenv-expand "~11.0.6"
+    enquirer "~2.3.6"
+    figures "3.2.0"
+    flat "^5.0.2"
+    front-matter "^4.0.2"
+    ignore "^5.0.4"
+    jest-diff "^29.4.1"
+    jsonc-parser "3.2.0"
+    lines-and-columns "2.0.3"
+    minimatch "9.0.3"
+    node-machine-id "1.1.12"
+    npm-run-path "^4.0.1"
+    open "^8.4.0"
+    ora "5.3.0"
+    semver "^7.5.3"
+    string-width "^4.2.3"
+    tar-stream "~2.2.0"
+    tmp "~0.2.1"
+    tsconfig-paths "^4.1.2"
+    tslib "^2.3.0"
+    yargs "^17.6.2"
+    yargs-parser "21.1.1"
+  optionalDependencies:
+    "@nx/nx-darwin-arm64" "20.1.4"
+    "@nx/nx-darwin-x64" "20.1.4"
+    "@nx/nx-freebsd-x64" "20.1.4"
+    "@nx/nx-linux-arm-gnueabihf" "20.1.4"
+    "@nx/nx-linux-arm64-gnu" "20.1.4"
+    "@nx/nx-linux-arm64-musl" "20.1.4"
+    "@nx/nx-linux-x64-gnu" "20.1.4"
+    "@nx/nx-linux-x64-musl" "20.1.4"
+    "@nx/nx-win32-arm64-msvc" "20.1.4"
+    "@nx/nx-win32-x64-msvc" "20.1.4"
 
 nx@20.1.4:
   version "20.1.4"
@@ -10902,6 +11536,7 @@ pathe@^1.1.1, pathe@^1.1.2:
   integrity sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 pathe@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-2.0.2.tgz#5ed86644376915b3c7ee4d00ac8c348d671da3a5"
@@ -10912,6 +11547,8 @@ peek-readable@^5.3.1:
   resolved "https://registry.yarnpkg.com/peek-readable/-/peek-readable-5.4.2.tgz#aff1e1ba27a7d6911ddb103f35252ffc1787af49"
   integrity sha512-peBp3qZyuS6cNIJ2akRNG1uo1WJ1d0wTxg/fxMdZ0BqCVhx242bSFHM9eNqflfJVS9SsgkzgT/1UgnsurBOTMg==
 =======
+=======
+>>>>>>> Stashed changes
 pathval@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/pathval/-/pathval-1.1.1.tgz"
@@ -10987,6 +11624,7 @@ pkg-types@^1.2.1:
     pathe "^1.1.2"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 playwright-core@1.50.1:
   version "1.50.1"
   resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.50.1.tgz#6a0484f1f1c939168f40f0ab3828c4a1592c4504"
@@ -10998,6 +11636,15 @@ playwright@1.50.1:
   integrity sha512-G8rwsOQJ63XG6BbKj2w5rHeavFjy5zynBA9zsJMMtBoe/Uf757oG12NXz6e6OirF7RCrTVAKFXbLmn1RbL7Qaw==
   dependencies:
     playwright-core "1.50.1"
+=======
+playwright-core@1.49.0:
+  version "1.49.0"
+
+playwright@1.49.0:
+  version "1.49.0"
+  dependencies:
+    playwright-core "1.49.0"
+>>>>>>> Stashed changes
 =======
 playwright-core@1.49.0:
   version "1.49.0"
@@ -11326,10 +11973,15 @@ postcss-value-parser@^4.0.0, postcss-value-parser@^4.1.0, postcss-value-parser@^
     source-map-js "^1.2.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 postcss@^8.4.23, postcss@^8.4.24, postcss@^8.4.33, postcss@^8.4.38, postcss@^8.4.49:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.5.1.tgz#e2272a1f8a807fafa413218245630b5db10a3214"
   integrity sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==
+=======
+postcss@^8.0.9, postcss@^8.2.2, postcss@^8.4.24, postcss@^8.4.31:
+  version "8.4.49"
+>>>>>>> Stashed changes
 =======
 postcss@^8.0.9, postcss@^8.2.2, postcss@^8.4.24, postcss@^8.4.31:
   version "8.4.49"
@@ -11519,6 +12171,7 @@ raw-body@2.5.2:
 
 react-hook-form@^7.54.0:
   version "7.54.0"
+<<<<<<< Updated upstream
 
 <<<<<<< Updated upstream
 react-icons@^5.4.0:
@@ -11533,6 +12186,10 @@ react-is@16.8.6:
 
 react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
 =======
+react-is@^16.13.1, react-is@^16.7.0:
+>>>>>>> Stashed changes
+=======
+
 react-is@^16.13.1, react-is@^16.7.0:
 >>>>>>> Stashed changes
   version "16.13.1"
@@ -11618,6 +12275,7 @@ readdirp@~3.6.0:
     picomatch "^2.2.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 redent@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/redent/-/redent-3.0.0.tgz#e557b7998316bb53c9f1f56fa626352c6963059f"
@@ -11630,6 +12288,10 @@ reflect.getprototypeof@^1.0.6, reflect.getprototypeof@^1.0.9:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/reflect.getprototypeof/-/reflect.getprototypeof-1.0.10.tgz#c629219e78a3316d8b604c765ef68996964e7bf9"
   integrity sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==
+=======
+reflect.getprototypeof@^1.0.4, reflect.getprototypeof@^1.0.6:
+  version "1.0.7"
+>>>>>>> Stashed changes
 =======
 reflect.getprototypeof@^1.0.4, reflect.getprototypeof@^1.0.6:
   version "1.0.7"
@@ -11762,6 +12424,7 @@ resolve@^1.1.7, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20
     supports-preserve-symlinks-flag "^1.0.0"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 resolve@^1.1.7, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.22.2, resolve@^1.22.4, resolve@~1.22.1, resolve@~1.22.2:
   version "1.22.10"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.10.tgz#b663e83ffb09bbf2386944736baae803029b8b39"
@@ -11771,6 +12434,8 @@ resolve@^1.1.7, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.22
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 resolve@^2.0.0-next.5:
@@ -11870,6 +12535,9 @@ rollup@^1.20.0||^2.0.0||^3.0.0||^4.0.0, rollup@^4.20.0:
     "@rollup/rollup-win32-arm64-msvc" "4.28.0"
     "@rollup/rollup-win32-ia32-msvc" "4.28.0"
     "@rollup/rollup-win32-x64-msvc" "4.28.0"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     fsevents "~2.3.2"
 
@@ -12041,11 +12709,14 @@ semver-truncate@^3.0.0:
     semver "^7.3.5"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 semver@7.6.3:
   version "7.6.3"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.3.tgz#980f7b5550bc175fb4dc09403085627f9eb33143"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 semver@^5.6.0:
@@ -12059,11 +12730,14 @@ semver@^6.3.0:
   integrity sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0, semver@^7.6.3:
   version "7.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.1.tgz#abd5098d82b18c6c81f6074ff2647fd3e7220c9f"
   integrity sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==
 =======
+=======
+>>>>>>> Stashed changes
 semver@^6.3.1:
   version "6.3.1"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz"
@@ -12073,6 +12747,9 @@ semver@^7.3.4, semver@^7.3.5, semver@^7.3.8, semver@^7.5.3, semver@^7.5.4, semve
   version "7.6.3"
   resolved "https://registry.npmjs.org/semver/-/semver-7.6.3.tgz"
   integrity sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 semver@~7.5.4:
@@ -12385,6 +13062,9 @@ statuses@^1.5.0, "statuses@>= 1.5.0 < 2":
   resolved "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 statuses@2.0.1:
   version "2.0.1"
@@ -12413,7 +13093,11 @@ streamsearch@^1.1.0:
 streamx@^2.15.0:
   version "2.22.0"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolved "https://registry.yarnpkg.com/streamx/-/streamx-2.22.0.tgz#cd7b5e57c95aaef0ff9b2aef7905afa62ec6e4a7"
+=======
+  resolved "https://registry.npmjs.org/streamx/-/streamx-2.22.0.tgz"
+>>>>>>> Stashed changes
 =======
   resolved "https://registry.npmjs.org/streamx/-/streamx-2.22.0.tgz"
 >>>>>>> Stashed changes
@@ -12582,11 +13266,14 @@ strip-final-newline@^2.0.0:
 strip-indent@^3.0.0:
   version "3.0.0"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   resolved "https://registry.yarnpkg.com/strip-indent/-/strip-indent-3.0.0.tgz#c32e1cee940b6b3432c771bc2c54bcce73cd3001"
   integrity sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ==
   dependencies:
     min-indent "^1.0.0"
 =======
+=======
+>>>>>>> Stashed changes
   resolved "https://registry.npmjs.org/strip-final-newline/-/strip-final-newline-3.0.0.tgz"
   integrity sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw==
 >>>>>>> Stashed changes
@@ -12939,10 +13626,15 @@ tree-dump@^1.0.1:
   integrity sha512-dpev9ABuLWdEubk+cIaI9cHwRNNDjkBBLXTwI4UCUFdQ5xXKqNXoK4FEciw/vxf+NQ7Cb7sGUyeUtORvHIdRXQ==
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ts-api-utils@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-2.0.1.tgz#660729385b625b939aaa58054f45c058f33f10cd"
   integrity sha512-dnlgjFSVetynI8nzgJ+qF62efpglpWRk8isUEWZGWlJYySCTD6aKvbUDu+zbPeDakk3bg5H4XpitHukgfL1m9w==
+=======
+ts-api-utils@^1.3.0:
+  version "1.4.3"
+>>>>>>> Stashed changes
 =======
 ts-api-utils@^1.3.0:
   version "1.4.3"
@@ -13042,10 +13734,13 @@ type-check@^0.4.0, type-check@~0.4.0:
     prelude-ls "^1.2.1"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 type-detect@4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
 =======
+=======
+>>>>>>> Stashed changes
 type-detect@^4.0.0, type-detect@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/type-detect/-/type-detect-4.1.0.tgz"
@@ -13054,6 +13749,9 @@ type-detect@^4.0.0, type-detect@^4.1.0:
 type-detect@4.0.8:
   version "4.0.8"
   resolved "https://registry.npmjs.org/type-detect/-/type-detect-4.0.8.tgz"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
@@ -13119,6 +13817,7 @@ typed-assert@^1.0.8:
 
 typescript-eslint@^8.0.0:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   version "8.23.0"
   resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-8.23.0.tgz#796deb48f040146b68fcc8cb07db68b87219a8d2"
   integrity sha512-/LBRo3HrXr5LxmrdYSOCvoAMm7p2jNizNfbIpCgvG4HMsnoprRUOce/+8VJ9BDYWW68rqIENE/haVLWPeFZBVQ==
@@ -13129,6 +13828,10 @@ typescript-eslint@^8.0.0:
 =======
   version "8.16.0"
   dependencies:
+=======
+  version "8.16.0"
+  dependencies:
+>>>>>>> Stashed changes
     "@typescript-eslint/eslint-plugin" "8.16.0"
     "@typescript-eslint/parser" "8.16.0"
     "@typescript-eslint/utils" "8.16.0"
@@ -13138,6 +13841,11 @@ typescript@*, "typescript@^3 || ^4 || ^5", "typescript@^4.9.0 || ^5.0.0", "types
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.6.3.tgz"
   integrity sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==
 >>>>>>> Stashed changes
+
+typescript@~5.4.2:
+  version "5.4.5"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-5.4.5.tgz"
+  integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
 typescript@~5.4.2:
   version "5.4.5"
@@ -13335,10 +14043,15 @@ vite-plugin-dts@^4.5.0:
     magic-string "^0.30.17"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 vite@^6.0.11:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/vite/-/vite-6.0.11.tgz#224497e93e940b34c3357c9ebf2ec20803091ed8"
   integrity sha512-4VL9mQPKoHy4+FE0NnRE/kbY51TOfaknxAjt3fJbGJxhIpBZiqVzlZDEesWWsuREXHwNdAoOFZ9MkPEVXczHwg==
+=======
+vite@*, "vite@^4 || ^5 || ^6", "vite@^4.2.0 || ^5.0.0 || ^6.0.0", vite@^5.0.0:
+  version "5.4.11"
+>>>>>>> Stashed changes
 =======
 vite@*, "vite@^4 || ^5 || ^6", "vite@^4.2.0 || ^5.0.0 || ^6.0.0", vite@^5.0.0:
   version "5.4.11"
@@ -13351,7 +14064,10 @@ vite@*, "vite@^4 || ^5 || ^6", "vite@^4.2.0 || ^5.0.0 || ^6.0.0", vite@^5.0.0:
     fsevents "~2.3.3"
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 vitest@^1.3.1, "vitest@^1.3.1 || ^2.0.0", vitest@1.6.0:
   version "1.6.0"
   resolved "https://registry.npmjs.org/vitest/-/vitest-1.6.0.tgz"
