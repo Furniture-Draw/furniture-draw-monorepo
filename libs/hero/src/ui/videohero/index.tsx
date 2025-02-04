@@ -82,6 +82,20 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
                       }}
                     />
                   )}
+                  <Box
+                    component="img"
+                    src="./images/Element2.svg"
+                    alt="Decoration"
+                    sx={{
+                      position: 'absolute',
+                      left: '50%',
+                      transform: 'translateX(-50%)',
+                      top: '100%',
+                      width: '200px',
+                      height: 'auto',
+                      marginTop: '-5px',
+                    }}
+                  />
                 </Box>
                 {secondPart}
               </Typography>
@@ -128,7 +142,7 @@ export const VideoHero: React.FC<VideoHeroProps> = ({
               component="iframe"
               src={`https://www.youtube.com/embed/${
                 videoSrc.split('v=')[1]
-              }?autoplay=1&mute=1&loop=1`}
+              }?autoplay=1&mute=1&loop=1&playlist=${videoSrc.split('v=')[1]}`}
               title={imageAlt}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
