@@ -1,6 +1,5 @@
 'use client';
 import { Register } from '@furniture-draw/register';
-import { Navigation } from '@furniture-draw/navigation';
 
 export default function Login() {
   return (

@@ -73,7 +73,7 @@
     },
     "@nx/react": {
       "library": {
-        "unitTestRunner": "vitest"
+        "unitTestRunner": "jest"
       }
     }
   }
