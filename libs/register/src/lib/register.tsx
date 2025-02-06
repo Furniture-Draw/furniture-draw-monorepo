@@ -18,10 +18,6 @@ import GoogleIcon from '@mui/icons-material/Google';
 import GithubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useState } from 'react';
-<<<<<<< Updated upstream
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-=======
 import Visibility from '@mui/icons-material/Visibility'; 
 import VisibilityOff from '@mui/icons-material/VisibilityOff'; 
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
@@ -31,7 +27,6 @@ export const AUTH_ENDPOINTS = {
   register: `${API_BASE_URL}/auth/register`,
   googleRegister: `${API_BASE_URL}/auth/google-register`,
 };
->>>>>>> Stashed changes
 
 export const Register = ({
   onHandleSubmit,
@@ -47,13 +42,9 @@ export const Register = ({
   const [isChecked, setIsChecked] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
-<<<<<<< Updated upstream
-  const handleFormSubmit = (data: RegisterFormInput) => {
-=======
   const handleFormSubmit = async (data: RegisterFormInput) => {
->>>>>>> Stashed changes
     if (!isChecked) {
-      alert('Please accept the privacy policy.');
+      alert('Lütfen gizlilik politikasını kabul edin.');
       return;
     }
 
@@ -117,124 +108,14 @@ export const Register = ({
   };
 
   return (
-<<<<<<< Updated upstream
-    <Container
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <Stack
-        component="form"
-        onSubmit={handleSubmit(handleFormSubmit)}
-        spacing={4}
-=======
     <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
       <Container
->>>>>>> Stashed changes
         sx={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-<<<<<<< Updated upstream
-        <Typography variant="h5">Create Account</Typography>
-        <Stack spacing={2} width={'100%'}>
-          <FormControl>
-            <InputLabel htmlFor="my-input">Username</InputLabel>
-            <Input
-              id="my-input"
-              aria-describedby="my-helper-text"
-              {...register('username', {
-                required: 'Username cannot be blank.',
-              })}
-              error={!!errors.username?.message}
-            />
-            {errors.username && (
-              <FormHelperText error id="my-helper-text">
-                {errors.username.message}
-              </FormHelperText>
-            )}
-          </FormControl>
-
-          <FormControl>
-            <InputLabel htmlFor="my-input">Email address</InputLabel>
-            <Input
-              id="my-input"
-              aria-describedby="my-helper-text"
-              {...register('email', {
-                required: 'Email cannot be blank.',
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: 'invalid email address',
-                },
-              })}
-              error={!!errors.email?.message}
-            />
-            {errors.email && (
-              <FormHelperText error id="my-helper-text">
-                {errors.email.message}
-              </FormHelperText>
-            )}
-          </FormControl>
-
-          <FormControl>
-            <InputLabel htmlFor="my-password">Password</InputLabel>
-            <Input
-              id="my-password"
-              type={showPassword ? 'text' : 'password'}
-              aria-describedby="my-helper-text"
-              {...register('password', {
-                required: 'Password cannot be blank.',
-              })}
-              error={!!errors.password?.message}
-              endAdornment={
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={() => setShowPassword(!showPassword)}
-                  edge="end"
-                >
-                  {showPassword ? <VisibilityOff /> : <Visibility />}
-                </IconButton>
-              }
-            />
-            {errors.password && (
-              <FormHelperText error id="my-helper-text">
-                {errors.password.message}
-              </FormHelperText>
-            )}
-          </FormControl>
-        </Stack>
-
-        <FormControlLabel
-          control={
-            <Checkbox
-              id="my-provicy"
-              checked={isChecked}
-              onChange={(e) => setIsChecked(e.target.checked)}
-            />
-          }
-          label="I accept the privacy policy"
-        />
-        {errors.isPrivacyPolicyAccepted && (
-          <FormHelperText error>
-            {errors.isPrivacyPolicyAccepted.message}
-          </FormHelperText>
-        )}
-
-        <Button fullWidth variant="contained" type="submit">
-          Sign up
-        </Button>
-
-        {(onGoogleClick || onFacebookClick || onGithubClick) && (
-          <Typography textAlign="center" variant="body1">
-            or
-          </Typography>
-        )}
-=======
->>>>>>> Stashed changes
         <Stack
           component="form"
           onSubmit={handleSubmit(handleFormSubmit)}
