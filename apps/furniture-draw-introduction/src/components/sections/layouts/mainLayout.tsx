@@ -1,11 +1,16 @@
-import "../styles/global.css";
-import { Footer } from "@furniture-draw/footer";
-import { ReactNode } from "react";
-import { usePathname } from "next/navigation";
+import '../styles/global.css';
+import { Footer } from '@furniture-draw/footer';
+import { ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
   const pathname = usePathname();
-  const excludedRoutes = ["/login", "/register"];
+  const excludedRoutes = [
+    '/login',
+    '/register',
+    '/resetpassword',
+    '/forgot-password',
+  ];
 
   return (
     <html lang="en">

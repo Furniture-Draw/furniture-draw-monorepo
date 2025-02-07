@@ -5,7 +5,12 @@ import { Footer } from '@furniture-draw/footer';
 
 const FooterWrapper = () => {
   const pathname = usePathname();
-  const excludedRoutes = ['/login', '/register'];
+  const excludedRoutes = [
+    '/login',
+    '/register',
+    '/resetpassword',
+    '/forgot-password',
+  ];
 
   return !excludedRoutes.includes(pathname) ? <Footer /> : null;
 };
