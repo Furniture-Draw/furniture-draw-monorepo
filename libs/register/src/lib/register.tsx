@@ -21,12 +21,13 @@ import { useState } from 'react';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-export const API_BASE_URL =
-  process.env.REACT_APP_API_URL || 'http://localhost:8080';
+
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
 export const AUTH_ENDPOINTS = {
   register: `${API_BASE_URL}/auth/register`,
   googleRegister: `${API_BASE_URL}/auth/google-register`,
 };
+
 export const Register = ({
   onHandleSubmit,
   onFacebookClick,
@@ -39,6 +40,7 @@ export const Register = ({
   } = useForm<RegisterFormInput>();
   const [isChecked, setIsChecked] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
   const handleFormSubmit = async (data: RegisterFormInput) => {
     if (!isChecked) {
       alert('Lütfen gizlilik politikasını kabul edin.');
@@ -56,6 +58,7 @@ export const Register = ({
           password: data.password,
         }),
       });
+
       if (response.status === 409) {
         alert('Email already registered.');
         return;
@@ -63,6 +66,7 @@ export const Register = ({
       if (!response.ok) {
         throw new Error('Registration failed');
       }
+
       const result = await response.text();
       console.log('Registration successful:', result);
       alert('Registration successful');
@@ -72,6 +76,7 @@ export const Register = ({
       alert('Registration failed. Please try again.');
     }
   };
+
   const handleGoogleSuccess = async (response: any) => {
     const credentialResponse = response.credential;
     try {
@@ -87,6 +92,7 @@ export const Register = ({
         },
         body: JSON.stringify(userData),
       });
+
       if (res.ok) {
         alert('Google ile kayıt başarılı!');
       } else {
@@ -96,6 +102,7 @@ export const Register = ({
       console.error('Google Login Error:', error);
     }
   };
+
   return (
     <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
       <Container

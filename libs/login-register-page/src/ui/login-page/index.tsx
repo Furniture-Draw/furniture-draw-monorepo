@@ -1,6 +1,8 @@
 'use client';
 import { useForm } from 'react-hook-form';
 import { LoginFormInput, LoginPageProps } from './types';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Button,
   Container,
@@ -16,13 +18,13 @@ import {
 import GoogleIcon from '@mui/icons-material/Google';
 import GithubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-export const API_BASE_URL =
-  process.env.REACT_APP_API_URL || 'http://localhost:8080';
+import ForgotPasswordModal from './ForgotPasswordModal'; // ForgotPasswordModal'ı içe aktar
+
+export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
 export const AUTH_ENDPOINTS = {
   login: `${API_BASE_URL}/auth/login`,
 };
+
 export const LoginPage = ({
   logo,
   onFacebookClick,
@@ -34,9 +36,12 @@ export const LoginPage = ({
     handleSubmit,
     formState: { errors },
   } = useForm<LoginFormInput>();
+
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const [loginMessage, setLoginMessage] = useState<string | null>(null);
+  const [forgotPasswordOpen, setForgotPasswordOpen] = useState(false); // Modal kontrolü
+
   const handleFormSubmit = async (data: LoginFormInput) => {
     setLoading(true);
     try {
@@ -50,14 +55,18 @@ export const LoginPage = ({
           password: data.password,
         }),
       });
+
       const result = await response.text();
+
       if (response.status === 401) {
         setLoginMessage('Invalid email or password.');
         return;
       }
+
       if (!response.ok) {
         throw new Error('Login failed.');
       }
+
       if (result === 'Login successful') {
         setLoginMessage('Login successful');
         alert('Login successful');
@@ -72,6 +81,7 @@ export const LoginPage = ({
       setLoading(false);
     }
   };
+
   return (
     <Container
       sx={{
@@ -90,6 +100,7 @@ export const LoginPage = ({
         alignItems="center"
       >
         <img src={logo} alt="company logo" style={{ maxWidth: 300 }} />
+
         <Typography variant="h5">Login</Typography>
         <Stack spacing={2} width={'100%'}>
           <FormControl>
@@ -116,6 +127,7 @@ export const LoginPage = ({
             <InputLabel htmlFor="my-password">Password</InputLabel>
             <Input
               id="my-password"
+              type="password"
               aria-describedby="my-helper-text"
               {...register('password', {
                 required: 'Şifre boş olamaz.',
@@ -129,18 +141,27 @@ export const LoginPage = ({
             )}
           </FormControl>
         </Stack>
+
         <Button fullWidth variant="contained" type="submit">
           Giriş yap
         </Button>
-        {loginMessage && (
-          <Typography variant="body1">{loginMessage}</Typography>
-        )}{' '}
-        {/* Display login message */}
+
+        {loginMessage && <Typography variant="body1">{loginMessage}</Typography>}
+
+        <Button 
+          variant="text" 
+          onClick={() => setForgotPasswordOpen(true)} 
+          sx={{ textTransform: 'none', fontSize: '0.9rem' }}
+        >
+          Şifremi unuttum
+        </Button>
+
         {(onGoogleClick || onFacebookClick || onGithubClick) && (
           <Typography textAlign="center" variant="body1">
             yada
           </Typography>
         )}
+
         <Stack
           direction="row"
           justifyContent="space-around"
@@ -174,7 +195,20 @@ export const LoginPage = ({
             </IconButton>
           )}
         </Stack>
+
+        <Typography variant="body2">
+          Don't have an account?{' '}
+          <Button variant="text" onClick={() => router.push('http://localhost:3000/register')}>
+            Kayıt olun
+          </Button>
+        </Typography>
       </Stack>
+
+      {/* Forgot Password Modal */}
+      <ForgotPasswordModal 
+        open={forgotPasswordOpen} 
+        onClose={() => setForgotPasswordOpen(false)} 
+      />
     </Container>
   );
 };
