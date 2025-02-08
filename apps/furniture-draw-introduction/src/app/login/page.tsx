@@ -15,15 +15,7 @@ export default function Login() {
           console.log('google clicked');
         }}
       />
-      <div className="text-center mt-4">
-        <span className="text-gray-600">Hesabınız yok mu? </span>
-        <a
-          href="http://localhost:3000/register"
-          className="text-blue-500 hover:text-blue-700 font-semibold"
-        >
-          Kayıt Ol
-        </a>
-      </div>
+     
     </div>
   );
 }

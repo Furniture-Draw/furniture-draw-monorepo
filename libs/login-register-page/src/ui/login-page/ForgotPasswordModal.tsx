@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import { 
   Modal, 
@@ -8,7 +10,6 @@ import {
   Stack 
 } from '@mui/material';
 
-// Props için bir arayüz tanımlayın
 interface ForgotPasswordModalProps {
   open: boolean;
   onClose: () => void;
@@ -16,13 +17,16 @@ interface ForgotPasswordModalProps {
 
 const ForgotPasswordModal: React.FC<ForgotPasswordModalProps> = ({ open, onClose }) => {
   const [email, setEmail] = useState('');
-  const [resetToken, setResetToken] = useState('');
-  const [newPassword, setNewPassword] = useState('');
   const [message, setMessage] = useState('');
-  const [step, setStep] = useState<'email' | 'reset-password' | 'success'>('email');
+  const [isLoading, setIsLoading] = useState(false);
 
-  
   const handleForgotPassword = async () => {
+    if (!email) {
+      setMessage('Please enter your email address');
+      return;
+    }
+
+    setIsLoading(true);
     try {
       const response = await fetch('http://localhost:8080/auth/forgot-password', {
         method: 'POST',
@@ -31,97 +35,20 @@ const ForgotPasswordModal: React.FC<ForgotPasswordModalProps> = ({ open, onClose
       });
   
       const result = await response.text();
-      console.log('Received token:', result); 
   
       if (response.ok) {
-        setResetToken(result);
-        setMessage('Reset link has been sent to your email.');
-        setStep('reset-password');
+        setMessage('Reset link has been sent to your email. Please check your inbox.');
+        setTimeout(() => {
+          onClose();
+        }, 3000);
       } else {
-        console.error('Server response:', result);
         setMessage(result);
       }
     } catch (error) {
       console.error('Error:', error);
-      setMessage('Error generating reset token');
-    }
-  };
-  
-      
-
-
-  const handleResetPassword = async () => {
-    try {
-      const response = await fetch('http://localhost:8080/auth/reset-password', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          token: resetToken,
-          newPassword
-        })
-      });
-
-      const result = await response.text();
-      
-      if (response.ok) {
-        setMessage('Password reset successful');
-        setStep('success');
-      } else {
-        setMessage(result);
-      }
-    } catch (error) {
-      setMessage('Error resetting password');
-    }
-  };
-
-  const renderContent = () => {
-    switch(step) {
-      case 'email':
-        return (
-          <Stack spacing={2}>
-            <Typography>Enter your email to reset password</Typography>
-            <TextField 
-              label="Email" 
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              fullWidth
-            />
-            <Button 
-              variant="contained" 
-              onClick={handleForgotPassword}
-            >
-              Send Reset Token
-            </Button>
-          </Stack>
-        );
-      case 'reset-password':
-        return (
-          <Stack spacing={2}>
-            <Typography>Enter new password</Typography>
-            <TextField 
-              label="New Password" 
-              type="password"
-              value={newPassword}
-              onChange={(e) => setNewPassword(e.target.value)}
-              fullWidth
-            />
-            <Button 
-              variant="contained" 
-              onClick={handleResetPassword}
-            >
-              Reset Password
-            </Button>
-          </Stack>
-        );
-      case 'success':
-        return (
-          <Typography>
-            Password reset successful. You can now log in.
-          </Typography>
-        );
+      setMessage('Error sending reset link');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -138,15 +65,31 @@ const ForgotPasswordModal: React.FC<ForgotPasswordModalProps> = ({ open, onClose
         p: 4,
         borderRadius: 2
       }}>
-        {renderContent()}
-        {message && (
-          <Typography 
-            color={message.includes('Error') || message.includes('No user found') ? 'error' : 'primary'}
-            mt={2}
+        <Stack spacing={2}>
+          <Typography variant="h6">Reset Password</Typography>
+          <Typography>Enter your email to receive a password reset link</Typography>
+          <TextField 
+            label="Email" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            fullWidth
+            disabled={isLoading}
+          />
+          <Button 
+            variant="contained" 
+            onClick={handleForgotPassword}
+            disabled={isLoading}
           >
-            {message}
-          </Typography>
-        )}
+            {isLoading ? 'Sending...' : 'Send Reset Link'}
+          </Button>
+          {message && (
+            <Typography 
+              color={message.includes('Error') || message.includes('not found') ? 'error' : 'primary'}
+            >
+              {message}
+            </Typography>
+          )}
+        </Stack>
       </Box>
     </Modal>
   );
