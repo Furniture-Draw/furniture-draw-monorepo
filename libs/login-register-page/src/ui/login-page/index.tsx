@@ -55,26 +55,25 @@ export const LoginPage = ({
           password: data.password,
         }),
       });
-  
-      const result = await response.text(); 
-  
+
+      const result = await response.text();
+
       if (response.status === 401) {
         setLoginMessage('Invalid email or password.');
         return;
       }
-  
+
       if (!response.ok) {
         throw new Error('Login failed.');
       }
-  
-      if (result === "Login successful") {
+
+      if (result === 'Login successful') {
         setLoginMessage('Login successful');
         alert('Login successful');
         router.push('http://localhost:3000');
       } else {
-        setLoginMessage(result); 
+        setLoginMessage(result);
       }
-  
     } catch (error) {
       console.error('Login error:', error);
       setLoginMessage('Login failed. Please try again.');
@@ -93,7 +92,7 @@ export const LoginPage = ({
     >
       <Stack
         component="form"
-        onSubmit={handleSubmit(handleFormSubmit)} 
+        onSubmit={handleSubmit(handleFormSubmit)}
         spacing={4}
         sx={{
           minWidth: 350,

@@ -4,16 +4,16 @@ export function Sponsors() {
   return (
     <div
       className="sponsors-container flex flex-col items-center"
-      style={{ width: '1482px', minHeight: '87px', padding: '40px' }}
+      style={{ width: '1922px', minHeight: '538px', padding: '140px 220px' }}
     >
-      <div className="text-center mb-6">
+      <div className="text-center mb-10">
         <h1 className="sponsors-title text-5xl font-bold text-gray-800">
           Our Sponsors
         </h1>
       </div>
 
       {/* Element2.svg ekleme */}
-      <div className="mb-6">
+      <div className="mb-8">
         <img
           src="./images/Element2.svg"
           alt="Element2"
@@ -22,7 +22,7 @@ export function Sponsors() {
       </div>
 
       {/* Logoları kart tasarımıyla hizala */}
-      <div className="sponsors flex justify-center items-center flex-wrap gap-12 mt-6">
+      <div className="sponsors flex justify-center items-center flex-wrap gap-[100px] mt-10">
         {[
           {
             name: 'Apple',

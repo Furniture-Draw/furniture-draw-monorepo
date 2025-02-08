@@ -18,8 +18,8 @@ import GoogleIcon from '@mui/icons-material/Google';
 import GithubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { useState } from 'react';
-import Visibility from '@mui/icons-material/Visibility'; 
-import VisibilityOff from '@mui/icons-material/VisibilityOff'; 
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 export const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
@@ -38,7 +38,6 @@ export const Register = ({
     handleSubmit,
     formState: { errors },
   } = useForm<RegisterFormInput>();
-
   const [isChecked, setIsChecked] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
@@ -47,7 +46,6 @@ export const Register = ({
       alert('Lütfen gizlilik politikasını kabul edin.');
       return;
     }
-
     try {
       const response = await fetch(AUTH_ENDPOINTS.register, {
         method: 'POST',
@@ -65,7 +63,6 @@ export const Register = ({
         alert('Email already registered.');
         return;
       }
-
       if (!response.ok) {
         throw new Error('Registration failed');
       }
@@ -88,7 +85,6 @@ export const Register = ({
         name: userInfo.name,
         email: userInfo.email,
       };
-
       const res = await fetch(AUTH_ENDPOINTS.googleRegister, {
         method: 'POST',
         headers: {
@@ -173,7 +169,10 @@ export const Register = ({
           </Stack>
           <FormControlLabel
             control={
-              <Checkbox checked={isChecked} onChange={(e) => setIsChecked(e.target.checked)} />
+              <Checkbox
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
             }
             label="Gizlilik politikasını kabul ediyorum"
           />
@@ -183,12 +182,11 @@ export const Register = ({
           <Typography textAlign="center" variant="body1">
             Yada
           </Typography>
-          <GoogleLogin 
-            onSuccess={handleGoogleSuccess} 
-            onError={() => alert('Google Login Failed')} 
-            locale="en" 
+          <GoogleLogin
+            onSuccess={handleGoogleSuccess}
+            onError={() => alert('Google Login Failed')}
+            locale="en"
           />
-
         </Stack>
       </Container>
     </GoogleOAuthProvider>

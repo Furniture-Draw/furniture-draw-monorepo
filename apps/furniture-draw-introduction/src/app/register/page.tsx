@@ -1,11 +1,9 @@
 'use client';
 import { Register } from '@furniture-draw/register';
-import { Navigation } from '@furniture-draw/navigation';
 
 export default function Login() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navigation />
       <br />
       <br />
       <br />
