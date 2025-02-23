@@ -11,6 +11,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "skipLibCheck": true,
     "plugins": [
       {
         "name": "next"
@@ -28,6 +29,6 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "src/app/middleware.jts"
-  ],
+, "postcss.config.cjs"  ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }
